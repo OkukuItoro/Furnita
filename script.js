@@ -33,64 +33,6 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// Testimonials
-
-// //Slider
-// const slides = document.querySelectorAll(".slide");
-// const btnLeft = document.querySelector(".slider__btn--left");
-// const btnRight = document.querySelector(".slider__btn--right");
-// const dotContainer = document.querySelector(".dots");
-
-// let curSlide = 0;
-// const maxSlide = slides.length;
-
-// //Functions
-
-// const goToSlide = function (theSlide) {
-//   slides.forEach(
-//     (slide, index) =>
-//       (slide.style.transform = `translateX(${100 * (index - theSlide)}%)`)
-//   ); // curSlide = 1: -100%, 0%, 100%, 200%
-// };
-
-// goToSlide(0);
-
-// // Next slide
-// const nextSlide = function () {
-//   if (curSlide === maxSlide - 1) {
-//     curSlide = 0;
-//   } else curSlide++;
-//   goToSlide(curSlide);
-//   activateDot(curSlide);
-// };
-
-// // Previous slide
-// const prevSlide = function () {
-//   if (curSlide === 0) {
-//     curSlide = maxSlide - 1;
-//   } else curSlide--;
-//   goToSlide(curSlide);
-//   activateDot(curSlide);
-// };
-
-// //Event handlers
-// btnRight.addEventListener("click", nextSlide);
-// btnLeft.addEventListener("click", prevSlide);
-
-// document.addEventListener("keydown", function (e) {
-//   console.log(e);
-//   if (e.key === "ArrowLeft") prevSlide();
-//   e.key === "ArrowRight" && nextSlide();
-// });
-
-// dotContainer.addEventListener("click", function (e) {
-//   if (e.target.classList.contains("dots__dot")) {
-//     const { slide } = e.target.dataset;
-//     goToSlide(slide);
-//     activateDot(slide);
-//   }
-// });
-
 //GALLERY SLIDER
 const sliderMain = document.getElementById("slider-main");
 const sliderItem = sliderMain.getElementsByClassName("item");
@@ -114,3 +56,24 @@ function prevTestimonialBtn() {
 function nextTestimonialBtn() {
   sliderTestimonial.append(testimonialItem[0]);
 }
+
+//NAVIGATION
+const mobileBtn = document.getElementById("mobile-cta");
+const mobileBtnExit = document.getElementById("mobile-exit");
+const navBar = document.querySelector(".navbar");
+
+const toggleNav = () => {
+  navBar.style.display = "none";
+  mobileBtn.style.display = "block";
+};
+
+mobileBtn.addEventListener("click", () => {
+  navBar.style.display = "block";
+  mobileBtn.style.display = "none";
+});
+mobileBtnExit.addEventListener("click", () => {
+  toggleNav();
+});
+navBar.addEventListener("click", () => {
+  toggleNav();
+});

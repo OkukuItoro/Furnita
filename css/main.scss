@@ -74,7 +74,7 @@ header {
   justify-content: space-evenly;
   height: auto;
   width: 100%;
-  padding: 0.3rem 0;
+  padding: 0.9rem 0;
   color: inherit;
 
   .mobile-menu {
@@ -141,8 +141,8 @@ header {
     background-size: cover;
     background-position: center;
     .home-text {
-      padding: 3.5rem;
-      width: 46%;
+      padding: 5.5rem;
+      width: 44%;
       max-width: 100%;
 
       h1 {
@@ -908,10 +908,6 @@ footer {
       h2 {
         width: 70%;
       }
-      // .slider-btn-area {
-      // }
-      // .slider-btn-area:hover {
-      // }
     }
     .gallery-image {
       height: 240px;
@@ -1192,7 +1188,7 @@ footer {
   //About
 }
 
-@media (max-width: 780px) {
+@media (max-width: 840px) {
   /* HOME */
   #section-home {
     .home {
@@ -1202,6 +1198,21 @@ footer {
       .home-text {
         padding: 3.5rem;
         width: 70%;
+        h1 {
+          padding: 2rem 0;
+          margin: 0.5rem;
+        }
+        p {
+          margin: 0.5rem;
+        }
+
+        a {
+          padding-left: 1rem;
+        }
+
+        .buttons {
+          margin: 1rem 0;
+        }
       }
     }
   }
@@ -1323,7 +1334,76 @@ footer {
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 650px) {
+  /* NAV BAR */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    padding: 0.3rem 0;
+    color: inherit;
+    padding: 0 4rem;
+
+    .mobile-menu {
+      margin-right: 1rem;
+      float: right;
+      cursor: pointer;
+      display: block;
+    }
+
+    nav {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      width: 69%;
+      right: 0;
+      top: 0;
+      background: var(--secondary-color);
+      height: 100vh;
+      padding: 2rem;
+
+      ul {
+        margin: 30% 0 0 20%;
+        padding: 1rem;
+        li {
+          display: block;
+          margin: 1rem;
+          font-size: 1.2rem;
+          a {
+            text-decoration: none;
+            color: #303030;
+          }
+          a.active-link,
+          a:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .navbar-nav-buttons {
+        margin-left: 0;
+        display: block;
+        .navbar-button {
+          margin: 0;
+
+          .responsive-btn {
+            margin-left: 0.7rem;
+          }
+        }
+      }
+
+      .mobile-menu-exit {
+        display: block;
+        height: 40px;
+        float: right;
+        margin: 0.5em;
+        cursor: pointer;
+      }
+    }
+  }
+
   /* HOME */
   #section-home {
     .home {
@@ -1532,6 +1612,224 @@ footer {
       .centered {
         margin: 0.4rem;
         padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  header {
+    padding: 0 1.5rem;
+  }
+
+  #section-home {
+    .home {
+      background-image: url(../img/hero-image.jpg);
+      background-size: cover;
+      background-position: 25%;
+      .home-text {
+        padding: 2rem;
+        width: 90%;
+
+        a {
+          padding-left: 0.7rem;
+        }
+        .buttons {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+
+  /* HOME & BEDROOM INTERIOR  */
+  #section-odd {
+    .section-container {
+      margin-top: 12rem;
+      padding: 0%;
+      position: relative;
+      display: block;
+
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 35%;
+      }
+
+      .image-container {
+        padding-top: 6rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin-left: 4rem;
+        padding: 1rem 3rem;
+        width: 80%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  /* KITCHEN INTERIOR & EXTERIOR */
+  #section-even {
+    .section-container {
+      margin-top: 12rem;
+      padding: 3rem 0;
+      position: relative;
+      display: block;
+
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 35%;
+      }
+
+      .image-container {
+        text-align: center;
+        padding-top: 2rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin: 3rem 0 1rem 4rem;
+        padding: 1rem 3rem;
+        width: 80%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  /* CREDITS */
+  #section-credits {
+    display: none;
+  }
+
+  /* ABOUT US */
+  /* ABOUT US */
+  #section-about-us {
+    .about-container {
+      display: flex;
+      .about-image {
+        display: none;
+      }
+
+      .about-description {
+        .about-icons {
+          display: inline-block;
+          position: absolute;
+          top: 5rem;
+          left: 2rem;
+          .icon-container {
+            .icon-position {
+              padding: 0.4rem;
+              margin-bottom: 0.2rem;
+              height: 4rem;
+            }
+          }
+        }
+        padding: 3rem 2rem 5rem 10rem;
+
+        .about-text-info {
+          padding-top: 3rem;
+          width: 93%;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  /* GALLERY & TESTIMONIALS*/
+  #section-gallery-and-testimonials {
+    margin: 5rem 0;
+    .section-header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h2 {
+        font-size: 1rem;
+        width: 63%;
+      }
+    }
+
+    .slider-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 500px;
+      margin-left: 1rem;
+
+      .slider-main {
+        position: absolute;
+        width: 400%;
+      }
+    }
+  }
+
+  /* MAIL SUBCRIPTION */
+  #section-mail-subscription {
+    padding: 3rem 0.5rem;
+
+    .subscription-container {
+      padding: 0.4rem;
+
+      .subscription-text-icons {
+        .text {
+          width: 80%;
+          h1 {
+            text-align: center;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .form-container {
+        background-color: var(--form-color);
+        border-radius: 5px;
+        margin: 0.4rem;
+        padding: 0.7rem;
+
+        form {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* CONTACT US */
+  #section-contact-us {
+    h5 {
+      font-weight: bold;
+    }
+    margin: 7rem 0;
+    display: block;
+
+    .contact-info-1 {
+      padding: 0.5rem;
+      img {
+        padding: 1rem 0;
+      }
+      p {
+        width: 70%;
+      }
+    }
+
+    .contact-info-2 {
+      display: block;
+      .responsive-tab {
+        display: none;
+      }
+      .res-moblie {
+        display: none;
       }
     }
   }

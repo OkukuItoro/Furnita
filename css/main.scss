@@ -94,8 +94,6 @@ header {
   nav {
     ul {
       margin: 0%;
-      // align-items: center;
-      // justify-content: space-around;
 
       li {
         display: inline-block;
@@ -109,6 +107,11 @@ header {
           font-weight: bold;
         }
       }
+    }
+
+    .btn {
+      height: 40px;
+      width: 100px;
     }
 
     .navbar-nav-buttons {
@@ -139,10 +142,15 @@ header {
     background-position: center;
     .home-text {
       padding: 3.5rem;
-      width: 45%;
+      width: 46%;
+      max-width: 100%;
 
       h1 {
-        padding: 1rem 0;
+        padding: 2rem 0;
+        margin: 0.5rem;
+      }
+      p {
+        margin: 0.5rem;
       }
 
       a {
@@ -150,7 +158,7 @@ header {
       }
 
       .buttons {
-        margin-top: 2rem;
+        margin: 2rem 0;
       }
     }
   }
@@ -158,6 +166,9 @@ header {
 
 /* HOME & BEDROOM INTERIOR  */
 #section-odd {
+  h1 {
+    font-size: 3rem;
+  }
   .section-container {
     padding: 0%;
     position: relative;
@@ -166,8 +177,13 @@ header {
     justify-content: center;
     .section-interior-text-header {
       position: absolute;
-      top: 10rem;
+      top: 14rem;
       left: 42rem;
+      .underline {
+        margin-left: 4rem;
+        height: 12px;
+        width: 42px;
+      }
     }
 
     .image-container {
@@ -201,9 +217,6 @@ header {
     height: 390px;
     width: 250px;
   }
-  hr {
-    margin-left: 10%;
-  }
   .section-container {
     padding: 0%;
     position: relative;
@@ -214,7 +227,12 @@ header {
     .section-interior-text-header {
       position: absolute;
       top: 10rem;
-      left: 25rem;
+      left: 29rem;
+      .underline {
+        margin-left: 1rem;
+        height: 12px;
+        width: 42px;
+      }
     }
 
     .image-container {
@@ -258,12 +276,13 @@ header {
 
     img {
       max-width: 100%;
-      width: 43.75rem;
+      width: 37.75rem;
     }
 
     .top-design-text {
       background-color: var(--secondary-color);
-      padding: 5rem 0 5rem 2rem;
+      padding: 5rem 4rem 5rem 2rem;
+      width: 70%;
 
       p {
         margin-top: 2rem;
@@ -320,7 +339,7 @@ header {
       display: inline-block;
       position: relative;
       margin: 0.5rem;
-      // transition: 0.5s
+      transition: 0.5s;
 
       .detail-box {
         margin-top: 2rem;
@@ -388,13 +407,15 @@ header {
       padding: 3rem 2rem 5rem 10rem;
 
       .about-text-header {
-        hr {
-          margin-left: 0%;
-          width: 10%;
+        .underline {
+          margin-left: 1rem;
+          height: 12px;
+          width: 42px;
         }
       }
 
       .about-text-info {
+        padding-top: 3rem;
         width: 60%;
       }
       button {
@@ -707,7 +728,7 @@ footer {
       .section-interior-text-header {
         position: absolute;
         top: 1rem;
-        left: 18%;
+        left: 42%;
       }
 
       .image-container {
@@ -717,11 +738,12 @@ footer {
       }
 
       .section-interior-info {
-        margin-left: 6rem;
+        margin-left: 15rem;
         padding: 1rem 3rem;
-        width: 60%;
+        width: 50%;
         .btn {
           margin-top: 2rem;
+          margin-left: 8rem;
         }
       }
     }
@@ -738,7 +760,7 @@ footer {
       .section-interior-text-header {
         position: absolute;
         top: 1rem;
-        left: 18%;
+        left: 42%;
       }
 
       .image-container {
@@ -748,11 +770,12 @@ footer {
       }
 
       .section-interior-info {
-        margin: 4rem 1rem 1rem 6rem;
+        margin: 3rem 0 1rem 15rem;
         padding: 1rem 3rem;
-        width: 60%;
+        width: 50%;
         .btn {
           margin-top: 2rem;
+          margin-left: 8rem;
         }
       }
     }
@@ -773,12 +796,12 @@ footer {
 
       img {
         max-width: 100%;
-        width: 25.75rem;
+        width: 30.75rem;
       }
 
       .top-design-text {
         background-color: var(--secondary-color);
-        padding: 5rem 0 5rem 2rem;
+        padding: 4rem;
 
         h3 {
           font-size: 1.5rem;
@@ -873,7 +896,7 @@ footer {
       left: 5rem;
     }
     .third-card {
-      right: 6rem;
+      right: 8rem;
       bottom: 8rem;
     }
   }
@@ -885,10 +908,10 @@ footer {
       h2 {
         width: 70%;
       }
-      .slider-btn-area {
-      }
-      .slider-btn-area:hover {
-      }
+      // .slider-btn-area {
+      // }
+      // .slider-btn-area:hover {
+      // }
     }
     .gallery-image {
       height: 240px;
@@ -1088,6 +1111,70 @@ footer {
     }
   }
 
+  /* HOME & BEDROOM INTERIOR  */
+  #section-odd {
+    .section-container {
+      margin-top: 12rem;
+      padding: 0%;
+      position: relative;
+      display: block;
+
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 42%;
+      }
+
+      .image-container {
+        text-align: center;
+        padding-top: 6rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin-left: 11rem;
+        padding: 1rem 3rem;
+        width: 60%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  /* KITCHEN INTERIOR & EXTERIOR */
+  #section-even {
+    .section-container {
+      margin-top: 12rem;
+      padding: 3rem 0;
+      position: relative;
+      display: block;
+
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 42%;
+      }
+
+      .image-container {
+        text-align: center;
+        padding-top: 2rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin: 3rem 0 1rem 11rem;
+        padding: 1rem 3rem;
+        width: 60%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 7rem;
+        }
+      }
+    }
+  }
+
   #section-credits {
     .first-card {
       position: absolute;
@@ -1101,100 +1188,351 @@ footer {
       bottom: 8rem;
     }
   }
+
+  //About
 }
 
 @media (max-width: 780px) {
   /* HOME */
   #section-home {
-    .home-text {
-      padding: 0.3rem;
-      width: 100%;
+    .home {
+      background-image: url(../img/hero-image.jpg);
+      background-size: cover;
+      background-position: 25%;
+      .home-text {
+        padding: 3.5rem;
+        width: 70%;
+      }
+    }
+  }
 
-      h1 {
-        padding: 0;
+  .btn {
+    height: 40px;
+    width: 100px;
+  }
+
+  /* TOP DESIGNS */
+  #section-top-designs {
+    margin: 3rem 0;
+    .row-container {
+      display: flex;
+
+      img {
+        max-width: 100%;
+        width: 20.75rem;
+      }
+
+      .top-design-text {
+        background-color: var(--secondary-color);
+        padding: 5rem 0 5rem 2rem;
+
+        p {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  /* CREDIT */
+  #section-credits {
+    img {
+      height: 260px;
+      width: 390px;
+    }
+    .first-card {
+      position: absolute;
+      top: 8rem;
+    }
+    .second-card {
+      left: 5rem;
+    }
+    .third-card {
+      right: 7rem;
+      bottom: 8rem;
+    }
+  }
+
+  /* MAIL SUBCRIPTION */
+  #section-mail-subscription {
+    .btn {
+      font-size: 0.9rem;
+    }
+    .form-container {
+      margin: 0 5rem;
+      img {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  /* CONTACT US */
+  #section-contact-us {
+    h5 {
+      font-weight: bold;
+    }
+    margin: 7rem 0;
+    display: block;
+    text-align: center;
+
+    //general
+    p {
+      font-size: 0.94rem;
+    }
+
+    .contact-info-1 {
+      padding: 0.5rem;
+      margin-bottom: 3rem;
+      img {
+        padding: 1rem 0;
+      }
+      p {
+        margin-left: 4rem;
+        width: 70%;
+      }
+    }
+
+    .contact-info-2 {
+      display: flex;
+      padding: 1rem 7rem;
+
+      .centered {
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  /* ABOUT US */
+  #section-about-us {
+    .about-container {
+      display: flex;
+      .about-image {
+        height: 300px;
+        width: 450px;
+      }
+
+      .about-description {
+        padding: 2rem 1rem 2rem 7rem;
+      }
+
+      .about-text-info {
+        padding-top: 2rem;
+        width: 60%;
       }
     }
   }
 }
 
-.btn {
-  height: 40px;
-  width: 100px;
-}
-/* CREDIT */
-#section-credits {
-  img {
-    height: 260px;
-    width: 390px;
-  }
-  .first-card {
-    position: absolute;
-    top: 8rem;
-  }
-  .second-card {
-    left: 5rem;
-  }
-  .third-card {
-    right: 7rem;
-    bottom: 8rem;
-  }
-}
-
-/* MAIL SUBCRIPTION */
-#section-mail-subscription {
-  .btn {
-    font-size: 0.9rem;
-  }
-  .form-container {
-    margin: 0 5rem;
-    img {
-      width: 2.5rem;
-    }
-  }
-}
-
-/* CONTACT US */
-#section-contact-us {
-  h5 {
-    font-weight: bold;
-  }
-  margin: 7rem 0;
-  display: block;
-  text-align: center;
-
-  //general
-  p {
-    font-size: 0.94rem;
-  }
-
-  .contact-info-1 {
-    padding: 0.5rem;
-    margin-bottom: 3rem;
-    img {
-      padding: 1rem 0;
-    }
-    p {
-      margin-left: 4rem;
-      width: 70%;
+@media (max-width: 579px) {
+  /* HOME */
+  #section-home {
+    .home {
+      background-image: url(../img/hero-image.jpg);
+      background-size: cover;
+      background-position: 25%;
+      .home-text {
+        padding: 3.5rem;
+        width: 90%;
+      }
     }
   }
 
-  .contact-info-2 {
-    display: flex;
-    padding: 1rem 7rem;
+  /* HOME & BEDROOM INTERIOR  */
+  #section-odd {
+    .section-container {
+      margin-top: 12rem;
+      padding: 0%;
+      position: relative;
+      display: block;
 
-    .centered {
-      margin: 1rem;
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 35%;
+      }
+
+      .image-container {
+        padding-top: 6rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin-left: 4rem;
+        padding: 1rem 3rem;
+        width: 75%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  /* KITCHEN INTERIOR & EXTERIOR */
+  #section-even {
+    .section-container {
+      margin-top: 12rem;
+      padding: 3rem 0;
+      position: relative;
+      display: block;
+
+      .section-interior-text-header {
+        position: absolute;
+        top: 1rem;
+        left: 35%;
+      }
+
+      .image-container {
+        text-align: center;
+        padding-top: 2rem;
+        margin: 0%;
+      }
+
+      .section-interior-info {
+        margin: 3rem 0 1rem 4rem;
+        padding: 1rem 3rem;
+        width: 75%;
+        .btn {
+          margin-top: 2rem;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  /* TOP DESIGNS */
+  #section-top-designs {
+    background-color: var(--secondary-color);
+    margin: 3rem 0;
+    .row-container {
+      display: flex;
+
+      img {
+        display: none;
+      }
+
+      .top-design-text {
+        padding: 3rem 0 5rem 2rem;
+
+        p {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  /* ABOUT US */
+  #section-about-us {
+    .about-container {
+      display: flex;
+      .about-image {
+        display: none;
+      }
+
+      .about-description {
+        .about-icons {
+          display: inline-block;
+          position: absolute;
+          top: 5rem;
+          left: 2rem;
+          .icon-container {
+            .icon-position {
+              padding: 0.4rem;
+              margin-bottom: 0.2rem;
+              height: 4rem;
+            }
+          }
+        }
+        padding: 3rem 2rem 5rem 10rem;
+
+        .about-text-info {
+          padding-top: 3rem;
+          width: 80%;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  /* GALLERY & TESTIMONIALS*/
+  #section-gallery-and-testimonials {
+    margin: 5rem 0;
+    .section-header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h2 {
+        font-size: 1.2rem;
+        width: 70%;
+      }
+    }
+  }
+
+  /* MAIL SUBCRIPTION */
+  #section-mail-subscription {
+    padding: 3rem 1rem;
+
+    .subscription-container {
+      padding: 1rem;
+
+      .subscription-text-icons {
+        .text {
+          width: 80%;
+          h1 {
+            text-align: center;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .form-container {
+        background-color: var(--form-color);
+        border-radius: 5px;
+        margin: 0.4rem;
+        padding: 1rem;
+
+        form {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* CONTACT US */
+  #section-contact-us {
+    h5 {
+      font-weight: bold;
+    }
+    margin: 7rem 0;
+    display: block;
+
+    .contact-info-1 {
       padding: 0.5rem;
+      img {
+        padding: 1rem 0;
+      }
+      p {
+        width: 70%;
+      }
+    }
+
+    .contact-info-2 {
+      display: block;
+
+      .responsive-tab {
+        display: flex;
+      }
+
+      .centered {
+        margin: 0.4rem;
+        padding: 0.5rem 2rem;
+      }
     }
   }
-}
-
-@media (max-width: 675px) {
-  //CONTACT
-  //ABOUT
-  //TOP DESIGN
-  //MAIL SUB
-  //CREDIT
-  // INTERIOR & EX
 }

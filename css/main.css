@@ -131,6 +131,11 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+header nav .btn {
+  height: 40px;
+  width: 100px;
+}
+
 header nav .navbar-nav-buttons {
   margin-left: 6rem;
   display: -webkit-box;
@@ -166,11 +171,17 @@ header nav .nav.sticky {
 
 #section-home .home .home-text {
   padding: 3.5rem;
-  width: 45%;
+  width: 46%;
+  max-width: 100%;
 }
 
 #section-home .home .home-text h1 {
-  padding: 1rem 0;
+  padding: 2rem 0;
+  margin: 0.5rem;
+}
+
+#section-home .home .home-text p {
+  margin: 0.5rem;
 }
 
 #section-home .home .home-text a {
@@ -178,10 +189,14 @@ header nav .nav.sticky {
 }
 
 #section-home .home .home-text .buttons {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 /* HOME & BEDROOM INTERIOR  */
+#section-odd h1 {
+  font-size: 3rem;
+}
+
 #section-odd .section-container {
   padding: 0%;
   position: relative;
@@ -198,8 +213,14 @@ header nav .nav.sticky {
 
 #section-odd .section-container .section-interior-text-header {
   position: absolute;
-  top: 10rem;
+  top: 14rem;
   left: 42rem;
+}
+
+#section-odd .section-container .section-interior-text-header .underline {
+  margin-left: 4rem;
+  height: 12px;
+  width: 42px;
 }
 
 #section-odd .section-container .image-container {
@@ -233,10 +254,6 @@ header nav .nav.sticky {
   width: 250px;
 }
 
-#section-even hr {
-  margin-left: 10%;
-}
-
 #section-even .section-container {
   padding: 0%;
   position: relative;
@@ -254,7 +271,13 @@ header nav .nav.sticky {
 #section-even .section-container .section-interior-text-header {
   position: absolute;
   top: 10rem;
-  left: 25rem;
+  left: 29rem;
+}
+
+#section-even .section-container .section-interior-text-header .underline {
+  margin-left: 1rem;
+  height: 12px;
+  width: 42px;
 }
 
 #section-even .section-container .image-container {
@@ -301,12 +324,13 @@ header nav .nav.sticky {
 
 #section-top-designs .row-container img {
   max-width: 100%;
-  width: 43.75rem;
+  width: 37.75rem;
 }
 
 #section-top-designs .row-container .top-design-text {
   background-color: var(--secondary-color);
-  padding: 5rem 0 5rem 2rem;
+  padding: 5rem 4rem 5rem 2rem;
+  width: 70%;
 }
 
 #section-top-designs .row-container .top-design-text p {
@@ -371,6 +395,8 @@ header nav .nav.sticky {
   display: inline-block;
   position: relative;
   margin: 0.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #section-gallery-and-testimonials .slider-wrap .item .detail-box {
@@ -438,12 +464,14 @@ header nav .nav.sticky {
   height: 4rem;
 }
 
-#section-about-us .about-container .about-description .about-text-header hr {
-  margin-left: 0%;
-  width: 10%;
+#section-about-us .about-container .about-description .about-text-header .underline {
+  margin-left: 1rem;
+  height: 12px;
+  width: 42px;
 }
 
 #section-about-us .about-container .about-description .about-text-info {
+  padding-top: 3rem;
   width: 60%;
 }
 
@@ -828,7 +856,7 @@ footer {
   #section-odd .section-container .section-interior-text-header {
     position: absolute;
     top: 1rem;
-    left: 18%;
+    left: 42%;
   }
   #section-odd .section-container .image-container {
     text-align: center;
@@ -836,12 +864,13 @@ footer {
     margin: 0%;
   }
   #section-odd .section-container .section-interior-info {
-    margin-left: 6rem;
+    margin-left: 15rem;
     padding: 1rem 3rem;
-    width: 60%;
+    width: 50%;
   }
   #section-odd .section-container .section-interior-info .btn {
     margin-top: 2rem;
+    margin-left: 8rem;
   }
   /* KITCHEN INTERIOR & EXTERIOR */
   #section-even .section-container {
@@ -853,7 +882,7 @@ footer {
   #section-even .section-container .section-interior-text-header {
     position: absolute;
     top: 1rem;
-    left: 18%;
+    left: 42%;
   }
   #section-even .section-container .image-container {
     text-align: center;
@@ -861,12 +890,13 @@ footer {
     margin: 0%;
   }
   #section-even .section-container .section-interior-info {
-    margin: 4rem 1rem 1rem 6rem;
+    margin: 3rem 0 1rem 15rem;
     padding: 1rem 3rem;
-    width: 60%;
+    width: 50%;
   }
   #section-even .section-container .section-interior-info .btn {
     margin-top: 2rem;
+    margin-left: 8rem;
   }
   /* BEDROOM INTERIOR */
   .section-bedroom-interior img {
@@ -881,11 +911,11 @@ footer {
   }
   #section-top-designs .row-container img {
     max-width: 100%;
-    width: 25.75rem;
+    width: 30.75rem;
   }
   #section-top-designs .row-container .top-design-text {
     background-color: var(--secondary-color);
-    padding: 5rem 0 5rem 2rem;
+    padding: 4rem;
   }
   #section-top-designs .row-container .top-design-text h3 {
     font-size: 1.5rem;
@@ -957,7 +987,7 @@ footer {
     left: 5rem;
   }
   #section-credits .third-card {
-    right: 6rem;
+    right: 8rem;
     bottom: 8rem;
   }
   /* GALLERY & TESTIMONIALS*/
@@ -1148,6 +1178,58 @@ footer {
     margin: 0.5em;
     cursor: pointer;
   }
+  /* HOME & BEDROOM INTERIOR  */
+  #section-odd .section-container {
+    margin-top: 12rem;
+    padding: 0%;
+    position: relative;
+    display: block;
+  }
+  #section-odd .section-container .section-interior-text-header {
+    position: absolute;
+    top: 1rem;
+    left: 42%;
+  }
+  #section-odd .section-container .image-container {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 0%;
+  }
+  #section-odd .section-container .section-interior-info {
+    margin-left: 11rem;
+    padding: 1rem 3rem;
+    width: 60%;
+  }
+  #section-odd .section-container .section-interior-info .btn {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+  /* KITCHEN INTERIOR & EXTERIOR */
+  #section-even .section-container {
+    margin-top: 12rem;
+    padding: 3rem 0;
+    position: relative;
+    display: block;
+  }
+  #section-even .section-container .section-interior-text-header {
+    position: absolute;
+    top: 1rem;
+    left: 42%;
+  }
+  #section-even .section-container .image-container {
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0%;
+  }
+  #section-even .section-container .section-interior-info {
+    margin: 3rem 0 1rem 11rem;
+    padding: 1rem 3rem;
+    width: 60%;
+  }
+  #section-even .section-container .section-interior-info .btn {
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
   #section-credits .first-card {
     position: absolute;
     top: 8rem;
@@ -1163,91 +1245,298 @@ footer {
 
 @media (max-width: 780px) {
   /* HOME */
-  #section-home .home-text {
-    padding: 0.3rem;
-    width: 100%;
+  #section-home .home {
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: 25%;
   }
-  #section-home .home-text h1 {
-    padding: 0;
+  #section-home .home .home-text {
+    padding: 3.5rem;
+    width: 70%;
+  }
+  .btn {
+    height: 40px;
+    width: 100px;
+  }
+  /* TOP DESIGNS */
+  #section-top-designs {
+    margin: 3rem 0;
+  }
+  #section-top-designs .row-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-top-designs .row-container img {
+    max-width: 100%;
+    width: 20.75rem;
+  }
+  #section-top-designs .row-container .top-design-text {
+    background-color: var(--secondary-color);
+    padding: 5rem 0 5rem 2rem;
+  }
+  #section-top-designs .row-container .top-design-text p {
+    margin-top: 2rem;
+  }
+  /* CREDIT */
+  #section-credits img {
+    height: 260px;
+    width: 390px;
+  }
+  #section-credits .first-card {
+    position: absolute;
+    top: 8rem;
+  }
+  #section-credits .second-card {
+    left: 5rem;
+  }
+  #section-credits .third-card {
+    right: 7rem;
+    bottom: 8rem;
+  }
+  /* MAIL SUBCRIPTION */
+  #section-mail-subscription .btn {
+    font-size: 0.9rem;
+  }
+  #section-mail-subscription .form-container {
+    margin: 0 5rem;
+  }
+  #section-mail-subscription .form-container img {
+    width: 2.5rem;
+  }
+  /* CONTACT US */
+  #section-contact-us {
+    margin: 7rem 0;
+    display: block;
+    text-align: center;
+  }
+  #section-contact-us h5 {
+    font-weight: bold;
+  }
+  #section-contact-us p {
+    font-size: 0.94rem;
+  }
+  #section-contact-us .contact-info-1 {
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  #section-contact-us .contact-info-1 img {
+    padding: 1rem 0;
+  }
+  #section-contact-us .contact-info-1 p {
+    margin-left: 4rem;
+    width: 70%;
+  }
+  #section-contact-us .contact-info-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 7rem;
+  }
+  #section-contact-us .contact-info-2 .centered {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  /* ABOUT US */
+  #section-about-us .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-about-us .about-container .about-image {
+    height: 300px;
+    width: 450px;
+  }
+  #section-about-us .about-container .about-description {
+    padding: 2rem 1rem 2rem 7rem;
+  }
+  #section-about-us .about-container .about-text-info {
+    padding-top: 2rem;
+    width: 60%;
   }
 }
 
-.btn {
-  height: 40px;
-  width: 100px;
-}
-
-/* CREDIT */
-#section-credits img {
-  height: 260px;
-  width: 390px;
-}
-
-#section-credits .first-card {
-  position: absolute;
-  top: 8rem;
-}
-
-#section-credits .second-card {
-  left: 5rem;
-}
-
-#section-credits .third-card {
-  right: 7rem;
-  bottom: 8rem;
-}
-
-/* MAIL SUBCRIPTION */
-#section-mail-subscription .btn {
-  font-size: 0.9rem;
-}
-
-#section-mail-subscription .form-container {
-  margin: 0 5rem;
-}
-
-#section-mail-subscription .form-container img {
-  width: 2.5rem;
-}
-
-/* CONTACT US */
-#section-contact-us {
-  margin: 7rem 0;
-  display: block;
-  text-align: center;
-}
-
-#section-contact-us h5 {
-  font-weight: bold;
-}
-
-#section-contact-us p {
-  font-size: 0.94rem;
-}
-
-#section-contact-us .contact-info-1 {
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-#section-contact-us .contact-info-1 img {
-  padding: 1rem 0;
-}
-
-#section-contact-us .contact-info-1 p {
-  margin-left: 4rem;
-  width: 70%;
-}
-
-#section-contact-us .contact-info-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem 7rem;
-}
-
-#section-contact-us .contact-info-2 .centered {
-  margin: 1rem;
-  padding: 0.5rem;
+@media (max-width: 579px) {
+  /* HOME */
+  #section-home .home {
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: 25%;
+  }
+  #section-home .home .home-text {
+    padding: 3.5rem;
+    width: 90%;
+  }
+  /* HOME & BEDROOM INTERIOR  */
+  #section-odd .section-container {
+    margin-top: 12rem;
+    padding: 0%;
+    position: relative;
+    display: block;
+  }
+  #section-odd .section-container .section-interior-text-header {
+    position: absolute;
+    top: 1rem;
+    left: 35%;
+  }
+  #section-odd .section-container .image-container {
+    padding-top: 6rem;
+    margin: 0%;
+  }
+  #section-odd .section-container .section-interior-info {
+    margin-left: 4rem;
+    padding: 1rem 3rem;
+    width: 75%;
+  }
+  #section-odd .section-container .section-interior-info .btn {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+  /* KITCHEN INTERIOR & EXTERIOR */
+  #section-even .section-container {
+    margin-top: 12rem;
+    padding: 3rem 0;
+    position: relative;
+    display: block;
+  }
+  #section-even .section-container .section-interior-text-header {
+    position: absolute;
+    top: 1rem;
+    left: 35%;
+  }
+  #section-even .section-container .image-container {
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0%;
+  }
+  #section-even .section-container .section-interior-info {
+    margin: 3rem 0 1rem 4rem;
+    padding: 1rem 3rem;
+    width: 75%;
+  }
+  #section-even .section-container .section-interior-info .btn {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+  /* TOP DESIGNS */
+  #section-top-designs {
+    background-color: var(--secondary-color);
+    margin: 3rem 0;
+  }
+  #section-top-designs .row-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-top-designs .row-container img {
+    display: none;
+  }
+  #section-top-designs .row-container .top-design-text {
+    padding: 3rem 0 5rem 2rem;
+  }
+  #section-top-designs .row-container .top-design-text p {
+    margin-top: 2rem;
+  }
+  /* ABOUT US */
+  #section-about-us .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-about-us .about-container .about-image {
+    display: none;
+  }
+  #section-about-us .about-container .about-description {
+    padding: 3rem 2rem 5rem 10rem;
+  }
+  #section-about-us .about-container .about-description .about-icons {
+    display: inline-block;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+  }
+  #section-about-us .about-container .about-description .about-icons .icon-container .icon-position {
+    padding: 0.4rem;
+    margin-bottom: 0.2rem;
+    height: 4rem;
+  }
+  #section-about-us .about-container .about-description .about-text-info {
+    padding-top: 3rem;
+    width: 80%;
+  }
+  #section-about-us .about-container .about-description button {
+    margin-top: 1rem;
+  }
+  /* GALLERY & TESTIMONIALS*/
+  #section-gallery-and-testimonials {
+    margin: 5rem 0;
+  }
+  #section-gallery-and-testimonials .section-header {
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #section-gallery-and-testimonials .section-header h2 {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  /* MAIL SUBCRIPTION */
+  #section-mail-subscription {
+    padding: 3rem 1rem;
+  }
+  #section-mail-subscription .subscription-container {
+    padding: 1rem;
+  }
+  #section-mail-subscription .subscription-container .subscription-text-icons .text {
+    width: 80%;
+  }
+  #section-mail-subscription .subscription-container .subscription-text-icons .text h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #section-mail-subscription .subscription-container .form-container {
+    background-color: var(--form-color);
+    border-radius: 5px;
+    margin: 0.4rem;
+    padding: 1rem;
+  }
+  #section-mail-subscription .subscription-container .form-container form img {
+    display: none;
+  }
+  /* CONTACT US */
+  #section-contact-us {
+    margin: 7rem 0;
+    display: block;
+  }
+  #section-contact-us h5 {
+    font-weight: bold;
+  }
+  #section-contact-us .contact-info-1 {
+    padding: 0.5rem;
+  }
+  #section-contact-us .contact-info-1 img {
+    padding: 1rem 0;
+  }
+  #section-contact-us .contact-info-1 p {
+    width: 70%;
+  }
+  #section-contact-us .contact-info-2 {
+    display: block;
+  }
+  #section-contact-us .contact-info-2 .responsive-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-contact-us .contact-info-2 .centered {
+    margin: 0.4rem;
+    padding: 0.5rem 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

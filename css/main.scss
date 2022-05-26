@@ -1766,7 +1766,7 @@ footer {
     .slider-wrap {
       position: relative;
       overflow: hidden;
-      height: 500px;
+      height: 420px;
       margin-left: 1rem;
 
       .slider-main {
@@ -1797,12 +1797,22 @@ footer {
         background-color: var(--form-color);
         border-radius: 5px;
         margin: 0.4rem;
-        padding: 0.7rem;
+        padding: 0.4rem;
         display: block;
 
         form {
           img {
             display: none;
+          }
+          .email-input {
+            margin: 0 0.5rem;
+            flex-grow: 1;
+            padding: 3px;
+            outline: none;
+            border: 1px solid var(--text-color-1);
+            border-radius: 5px;
+            background: inherit;
+            transition: background 0.25s, box-shadow 0.25s;
           }
         }
       }
@@ -1815,8 +1825,12 @@ footer {
   }
 
   #section-contact-us-mobile {
-    background-color: var(--secondary-color);
     display: block;
-    margin: 3rem 0 1rem 2rem;
+    margin: 3rem 0 1rem 0.5rem;
+    padding: 0.6rem;
+
+    .center {
+      padding: 1rem 0;
+    }
   }
 }

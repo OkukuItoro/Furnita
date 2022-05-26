@@ -638,6 +638,10 @@ header {
   }
 }
 
+#section-contact-us-mobile {
+  display: none;
+}
+
 footer {
   background-color: var(--secondary-color);
   padding: 1rem;
@@ -1662,11 +1666,11 @@ footer {
 
       .section-interior-info {
         margin-left: 4rem;
-        padding: 1rem 3rem;
-        width: 80%;
+        padding: 1rem 2rem;
+        width: 84%;
         .btn {
           margin-top: 2rem;
-          margin-left: 6rem;
+          margin-left: 3rem;
         }
       }
     }
@@ -1694,11 +1698,11 @@ footer {
 
       .section-interior-info {
         margin: 3rem 0 1rem 4rem;
-        padding: 1rem 3rem;
-        width: 80%;
+        padding: 1rem 2rem;
+        width: 84%;
         .btn {
           margin-top: 2rem;
-          margin-left: 6rem;
+          margin-left: 3rem;
         }
       }
     }
@@ -1709,7 +1713,6 @@ footer {
     display: none;
   }
 
-  /* ABOUT US */
   /* ABOUT US */
   #section-about-us {
     .about-container {
@@ -1768,7 +1771,7 @@ footer {
 
       .slider-main {
         position: absolute;
-        width: 400%;
+        width: 1000%;
       }
     }
   }
@@ -1795,6 +1798,7 @@ footer {
         border-radius: 5px;
         margin: 0.4rem;
         padding: 0.7rem;
+        display: block;
 
         form {
           img {
@@ -1807,30 +1811,12 @@ footer {
 
   /* CONTACT US */
   #section-contact-us {
-    h5 {
-      font-weight: bold;
-    }
-    margin: 7rem 0;
+    display: none;
+  }
+
+  #section-contact-us-mobile {
+    background-color: var(--secondary-color);
     display: block;
-
-    .contact-info-1 {
-      padding: 0.5rem;
-      img {
-        padding: 1rem 0;
-      }
-      p {
-        width: 70%;
-      }
-    }
-
-    .contact-info-2 {
-      display: block;
-      .responsive-tab {
-        display: none;
-      }
-      .res-moblie {
-        display: none;
-      }
-    }
+    margin: 3rem 0 1rem 2rem;
   }
 }

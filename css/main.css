@@ -755,6 +755,10 @@ header nav .nav.sticky {
   padding: 0.5rem 2rem;
 }
 
+#section-contact-us-mobile {
+  display: none;
+}
+
 footer {
   background-color: var(--secondary-color);
   padding: 1rem;
@@ -1658,12 +1662,12 @@ footer {
   }
   #section-odd .section-container .section-interior-info {
     margin-left: 4rem;
-    padding: 1rem 3rem;
-    width: 80%;
+    padding: 1rem 2rem;
+    width: 84%;
   }
   #section-odd .section-container .section-interior-info .btn {
     margin-top: 2rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
   /* KITCHEN INTERIOR & EXTERIOR */
   #section-even .section-container {
@@ -1684,18 +1688,17 @@ footer {
   }
   #section-even .section-container .section-interior-info {
     margin: 3rem 0 1rem 4rem;
-    padding: 1rem 3rem;
-    width: 80%;
+    padding: 1rem 2rem;
+    width: 84%;
   }
   #section-even .section-container .section-interior-info .btn {
     margin-top: 2rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
   /* CREDITS */
   #section-credits {
     display: none;
   }
-  /* ABOUT US */
   /* ABOUT US */
   #section-about-us .about-container {
     display: -webkit-box;
@@ -1753,7 +1756,7 @@ footer {
   }
   #section-gallery-and-testimonials .slider-wrap .slider-main {
     position: absolute;
-    width: 400%;
+    width: 1000%;
   }
   /* MAIL SUBCRIPTION */
   #section-mail-subscription {
@@ -1774,35 +1777,19 @@ footer {
     border-radius: 5px;
     margin: 0.4rem;
     padding: 0.7rem;
+    display: block;
   }
   #section-mail-subscription .subscription-container .form-container form img {
     display: none;
   }
   /* CONTACT US */
   #section-contact-us {
-    margin: 7rem 0;
-    display: block;
-  }
-  #section-contact-us h5 {
-    font-weight: bold;
-  }
-  #section-contact-us .contact-info-1 {
-    padding: 0.5rem;
-  }
-  #section-contact-us .contact-info-1 img {
-    padding: 1rem 0;
-  }
-  #section-contact-us .contact-info-1 p {
-    width: 70%;
-  }
-  #section-contact-us .contact-info-2 {
-    display: block;
-  }
-  #section-contact-us .contact-info-2 .responsive-tab {
     display: none;
   }
-  #section-contact-us .contact-info-2 .res-moblie {
-    display: none;
+  #section-contact-us-mobile {
+    background-color: var(--secondary-color);
+    display: block;
+    margin: 3rem 0 1rem 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

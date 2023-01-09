@@ -1,0 +1,115 @@
+/* SLIDER */
+.slider {
+  &__head {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin-bottom: 3rem;
+      padding: 2rem 7rem;
+    }
+
+    &--controls {
+      &__btn {
+        border: none;
+        border-radius: 5px;
+        padding: 0.7rem 1.1rem;
+        color: #303030;
+        outline: none;
+        background-color: #ddd;
+        transition: 0.4s;
+
+        &:hover {
+          color: #ffffff;
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    overflow: hidden;
+    height: 37.875rem;
+    margin-left: 8rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin-left: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 2rem;
+    }
+
+    &--main {
+      position: absolute;
+      height: 100%;
+      width: 300%;
+      display: flex;
+    }
+
+    &--item {
+      display: inline-block;
+      position: relative;
+      margin: 1rem;
+      transition: 0.5s;
+    }
+  }
+}
+
+/* GALLERY */
+.gallery {
+  &__image {
+    height: 22.75rem;
+  }
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  background-color: #ddd;
+  padding: 2rem;
+  height: 32rem;
+  width: 45rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-smaller) {
+    height: 36rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: auto;
+    height: 33rem;
+  }
+
+  &__quote-icon {
+    width: 4.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 3rem;
+    }
+  }
+
+  &__author-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 0.5rem;
+    }
+
+    &--photo {
+      width: 4.6rem;
+      border-radius: 50%;
+
+      @media only screen and (max-width: $bp-smaller) {
+        width: 3.5rem;
+      }
+    }
+  }
+}

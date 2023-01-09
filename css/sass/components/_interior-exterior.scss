@@ -1,0 +1,85 @@
+/* HOME, KITCHEN INTERIORS AND EXTERIOR DESIGN */
+.interior-exterior {
+  display: flex;
+  align-items: center;
+  width: 75%;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+
+  // Photos container
+  &__photos-container {
+    display: flex;
+    margin: 0.5rem;
+    width: 60%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+
+    &--photo {
+      width: 50%;
+      padding: 0.9rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+/* BEDROOM INTERIOR */
+.bedroom-interior {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  padding: 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    width: 85%;
+  }
+
+  &__photos-container {
+    display: flex;
+    width: 60%;
+    margin: 0.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+
+    &--photo {
+      width: 50%;
+      padding: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+// Reverse-column display for kitchen interior and exterior designs
+@media only screen and (max-width: $bp-medium) {
+  .kitchen-interior,
+  .exterior {
+    flex-direction: column;
+  }
+}

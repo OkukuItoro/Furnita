@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;600;700&family=Montserrat:wght@100;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Raleway:wght@200;400;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -26,295 +26,494 @@
 
     <link rel="stylesheet" href="css/main.css" />
 
+    <script defer src="script.js"></script>
+
     <title>Furnita</title>
   </head>
   <body>
-    <!-- NAVIGATION BAR -->
-    <header>
-      <img src="img/logos/nav-logo.svg" alt="Climma logo" />
-
-      <img
-        id="mobile-cta"
-        class="mobile-menu toggle-menu"
-        src="/img/icons/HamburgerMenu.svg"
-        alt="Open Navigation"
-      />
-
-      <nav class="navbar">
+    <header class="header section__header">
+      <!-- NAVIGATION BAR -->
+      <nav class="header__navbar navbar">
         <img
-          id="mobile-exit"
-          class="mobile-menu"
-          src="/img/icons/times.svg"
-          alt="Close Navigation"
+          class="navbar__logo"
+          src="img/logos/nav-logo.svg"
+          alt="Furnita logo"
+        />
+        <img
+          id="mobile-navbar__open"
+          class="navbar__mobile-menu navbar__mobile-menu--open"
+          src="/img/icons/HamburgerMenu.svg"
+          alt="Open Navigation"
         />
 
-        <ul>
-          <li>
-            <a class="navbar-link active-link" aria-current="page" href="#"
-              >Home</a
-            >
+        <ul class="navbar__items">
+          <li class="navbar__items--links">
+            <a class="active-link" aria-current="page" href="#">Home</a>
           </li>
-          <li>
-            <a class="navbar-link screen-show" href="#section-about-us"
-              >About</a
-            >
+          <li class="navbar__items--links">
+            <a class="screen-show" href="#section-home-interior">Designs</a>
           </li>
-          <li>
-            <a class="navbar-link screen-show" href="#section-contact-us"
+          <li class="navbar__items--links">
+            <a class="screen-show" href="#section-testimonials">Testimonials</a>
+          </li>
+          <li class="navbar__items--links">
+            <a class="screen-show" href="#section-contact-and-links"
               >Contact Us</a
             >
           </li>
-          <li><a class="navbar-link" href="#">Privacy Policy</a></li>
-          <li>
-            <div class="navbar-nav-buttons">
-              <a class="navbar-button" href="#">Sign in</a>
-              <a class="navbar-button" href="#">
-                <button
-                  type="button"
-                  class="btn btn-show-popScreen responsive-btn"
-                >
-                  Sign up
-                </button>
-              </a>
-            </div>
+          <li class="navbar__items--links links__last-item">
+            <a class="screen-show" href="#section-about">About Us</a>
+          </li>
+
+          <li class="navbar__items--buttons">
+            <button class="btn btn__navbar btn__light">Login</button>
+            <button class="btn btn__navbar btn-show-popScreen responsive-btn">
+              Sign up
+            </button>
           </li>
         </ul>
+
+        <img
+          id="mobile-navbar__exit"
+          class="navbar__mobile-menu navbar__mobile-menu--close"
+          src="/img/icons/times.svg"
+          alt="Close Navigation"
+        />
       </nav>
+
+      <!-- HERO -->
+      <main class="section header__hero">
+        <div class="header__hero--content">
+          <div class="header__hero--content__text-box hero__text-box">
+            <h1 class="hero__text-box--heading">
+              Quality home interiors and exterior designs that fit your style
+            </h1>
+            <p class="hero__text-box--description">
+              We are a team of talented and experienced designers who are
+              dedicated to helping you create the home of your dreams. Our focus
+              is on bringing your vision to life, whether you want to refresh a
+              single room or redesign your entire home.
+            </p>
+          </div>
+          <div class="header__hero--content__cta">
+            <button class="btn btn-dark btn-lg">Get Started</button>
+            <a class="hero__text-box--cta" href="#">Learn more</a>
+          </div>
+        </div>
+      </main>
     </header>
 
-    <!-- HOME -->
-    <section class="section" id="section-home">
-      <div class="home">
-        <div class="home-text">
-          <h1>Quality interiors and exterior designs that fit your style</h1>
-          <p>
-            We have a wide range of unique items made by the best designers
-            ready and available just for you.
-          </p>
-          <div class="buttons">
-            <button type="button" class="btn btn-dark btn-lg">
-              Get Started
-            </button>
-            <a href="#">Learn more</a>
+    <!-- HOME INTERIOR SECTION -->
+    <section
+      class="section section__interior-exterior section__home-interior hidden"
+      id="section-home-interior"
+    >
+      <div class="interior-exterior">
+        <div class="interior-exterior__photos-container home-interior__photos">
+          <img
+            class="interior-exterior__photos-container--photo"
+            src="img/home/home-interior-1.png"
+            alt="First living room interior photo"
+          />
+          <img
+            class="interior-exterior__photos-container--photo"
+            src="img/home/home-interior-2.png"
+            alt="Second living room interior photo"
+          />
+        </div>
+        <div class="interior-exterior__text-box">
+          <h2
+            class="interior-exterior__text-box--heading home-interior__heading"
+          >
+            Home
+            <span class="interior-exterior__text-box--heading__sub"
+              >Interior</span
+            >
+          </h2>
+          <div class="home-interior__text-content">
+            <p class="interior-exterior__text-box--paragraph">
+              Our team is dedicated to helping you create the home of your
+              dreams, and we will work with you every step of the way to make
+              sure that your vision is brought to life. Some of our specialties
+              include modern, traditional, bohemian, and other popular design
+              styles.
+            </p>
+            <button class="btn btn-dark">Get Started</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- HOME INTERIOR -->
-    <section class="section" id="section-odd">
-      <div class="section-container">
-        <div class="image-container">
-          <img
-            class="image-left"
-            src="img/home/home-interior-1.png"
-            alt="Living room interior"
-          />
-          <img
-            class="image-right"
-            src="img/home/home-interior-2.png"
-            alt="Living room interior 2"
-          />
-        </div>
-        <div class="section-interior-text-header">
-          <h3>Home interior</h3>
-          <img class="underline" src="img/rectangle.svg" alt="" />
-        </div>
-        <div class="section-interior-info">
-          <p class="section-interior-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            odit recusandae, nobis, maiores aspernatur quia quam magni
-            dignissimos minima ipsum.
-          </p>
-          <button type="button" class="btn btn-dark">Get Started</button>
-        </div>
-      </div>
-    </section>
-
     <!-- KITCHEN INTERIOR -->
-    <section class="section section-kitchen-interior" id="section-even">
-      <div class="section-container">
-        <div class="section-interior-text-header">
-          <h3>Kitchen interior</h3>
-          <img class="underline" src="img/rectangle.svg" alt="" />
+    <section
+      class="section section__interior-exterior section__kitchen-interior hidden"
+      id="section-kitchen-interior"
+    >
+      <div class="interior-exterior kitchen-interior">
+        <div class="interior-exterior__text-box">
+          <h2
+            class="interior-exterior__text-box--heading kitchen-interior__heading"
+          >
+            Kitchen
+            <span class="interior-exterior__text-box--heading__sub"
+              >Interior</span
+            >
+          </h2>
+          <div class="kitchen-interior__text-content">
+            <p class="interior-exterior__text-box--paragraph">
+              We will help you create a kitchen that is functional, stylish, and
+              reflective of your personal taste. Whether you want to update your
+              current space or start from scratch with a complete remodel.
+            </p>
+            <button class="btn btn-dark">Get Started</button>
+          </div>
         </div>
-        <div class="section-interior-info">
-          <p class="section-interior-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            odit recusandae, nobis, maiores aspernatur quia quam magni
-            dignissimos minima ipsum.
-          </p>
-          <button type="button" class="btn btn-dark">Get Started</button>
-        </div>
-        <div class="image-container">
+        <div
+          class="interior-exterior__photos-container kitchen-interior__photos"
+        >
           <img
-            class="image-left"
+            class="interior-exterior__photos-container--photo"
             src="img/kitchen/kitchen-interior-1.png"
-            alt="kitchen interior"
+            alt="first kitchen interior photo"
           />
           <img
-            class="image-right"
+            class="interior-exterior__photos-container--photo"
             src="img//kitchen/kitchen-interior-2.png"
-            alt="kitchen interior 2"
+            alt="second kitchen interior photo"
           />
         </div>
       </div>
     </section>
 
     <!-- TOP DESIGNS -->
-    <section class="section" id="section-top-designs">
-      <div class="row-container">
-        <img src="img/top-design.png" alt="web windows designed icon" />
-        <div class="top-design-text">
-          <h2>We hire the very best to create stunning designs</h2>
-          <p>Courtesy: Enobong Asanga</p>
+    <section class="section section__top-designs" id="section-top-designs">
+      <div class="top-designs__heading">
+        <h2 class="top-designs__heading--text">
+          Top D<span>esigns</span> from our team of experts
+        </h2>
+      </div>
+      <div class="primary-slider top-designs__slider">
+        <div class="slide">
+          <img src="img/top-designs-1-md.jpg" alt="Photo 1" />
+          <div class="top-designs__designer">
+            <img
+              class="top-designs__designer--photo"
+              src="img/top-designers/designer-1.jpg"
+              alt="first designer avatar"
+            />
+            <div class="top-designs__designer--contact">
+              <p class="top-designs__designer--name">Williams Ukpong</p>
+              <div class="contact__logos contact-address">
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/mail-icon.svg"
+                    alt="email logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/twitter-icon.svg"
+                    alt="twitter logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/github-icon.svg"
+                    alt="github logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="slide">
+          <img src="img/top-designs-2-md.jpg" alt="Photo 2" />
+          <div class="top-designs__designer">
+            <img
+              class="top-designs__designer--photo"
+              src="img/top-designers/designer-2.jpg"
+              alt="second designer avatar"
+            />
+            <div class="top-designs__designer--contact">
+              <p class="top-designs__designer--name">Mitchelle Woods</p>
+              <div class="contact__logos contact-address">
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/mail-icon.svg"
+                    alt="email logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/twitter-icon.svg"
+                    alt="twitter logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/github-icon.svg"
+                    alt="github logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/top-designs-3-lg.jpg" alt="Photo 3" />
+          <div class="top-designs__designer">
+            <img
+              class="top-designs__designer--photo"
+              src="img/top-designers/designer-3.jpg"
+              alt="third designer avatar"
+            />
+            <div class="top-designs__designer--contact">
+              <p class="top-designs__designer--name">Harry Miles</p>
+              <div class="contact__logos contact-address">
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/mail-icon.svg"
+                    alt="email logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/twitter-icon.svg"
+                    alt="twitter logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/github-icon.svg"
+                    alt="github logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/top-designs-4-md.jpg" alt="Photo 4" />
+          <div class="top-designs__designer">
+            <img
+              class="top-designs__designer--photo"
+              src="img/top-designers/designer-4.jpg"
+              alt="fourth designer avatar"
+            />
+            <div class="top-designs__designer--contact">
+              <p class="top-designs__designer--name">Emmanuel Jackson</p>
+              <div class="contact__logos contact-address">
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/mail-icon.svg"
+                    alt="email logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/twitter-icon.svg"
+                    alt="twitter logo"
+                  />
+                </a>
+
+                <a class="contact-address__link" href="#">
+                  <img
+                    class="contact-address__link--logo"
+                    src="img/icons/about/github-icon.svg"
+                    alt="github logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots"></div>
       </div>
     </section>
 
     <!-- BEDROOM INTERIOR -->
-    <section class="section section-bedroom-interior" id="section-odd">
-      <div class="section-container">
-        <div class="image-container">
+    <section
+      class="section section__interior-exterior section__bedroom-interior hidden"
+      id="section-bedroom-interior"
+    >
+      <div class="bedroom-interior">
+        <div
+          class="bedroom-interior__photos-container bedroom-interior__photos"
+        >
           <img
-            class="image-left"
+            class="bedroom-interior__photos-container--photo"
             src="img/bedroom/bedroom-image-1.png"
-            alt="Bedroom interior"
+            alt="First bedroom interior photo"
           />
           <img
-            class="image-right"
+            class="bedroom-interior__photos-container--photo"
             src="img/bedroom/bedroom-image-2.png"
-            alt="Bedroom interior 2"
+            alt="Second bedroom interior photo"
           />
         </div>
-        <div class="section-interior-text-header">
-          <h3>Bed interior</h3>
-          <img class="underline" src="img/rectangle.svg" alt="" />
-        </div>
-        <div class="section-interior-info">
-          <p class="section-interior-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            odit recusandae, nobis, maiores aspernatur quia quam magni
-            dignissimos minima ipsum.
-          </p>
-          <button type="button" class="btn btn-dark">Get Started</button>
+        <div class="bedroom-interior__text-box">
+          <h2
+            class="bedroom-interior__text-box--heading bedroom-interior__heading"
+          >
+            Bed
+            <span class="bedroom-interior__text-box--heading__sub"
+              >Interior</span
+            >
+          </h2>
+          <div class="bedroom-interior__text-content">
+            <p class="bedroom-interior__text-box--paragraph">
+              We also specialize in creating beautiful and functional bedroom
+              spaces that reflect your personal style and taste. Whether you are
+              looking to update your bedroom with a fresh coat of paint, new
+              furniture, or a complete redesign, we have the skills and
+              experience to make it happen.
+            </p>
+            <button class="btn btn-dark">Get Started</button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXTERIORS -->
-    <section class="section section-exterior" id="section-even">
-      <div class="section-container">
-        <div class="section-interior-text-header">
-          <h3>Exterior Design</h3>
-          <img class="underline" src="img/rectangle.svg" alt="" />
+    <section
+      class="section section__interior-exterior section__exterior hidden"
+      id="section-exterior"
+    >
+      <div class="interior-exterior exterior">
+        <div class="interior-exterior__text-box">
+          <h2 class="interior-exterior__text-box--heading exterior__heading">
+            <span class="interior-exterior__text-box--heading__sub"
+              >Exterior</span
+            >
+            Designs
+          </h2>
+          <div class="exterior__text-content">
+            <p class="interior-exterior__text-box--paragraph">
+              Our team is dedicated to helping you create the perfect outdoor
+              space.We understand the importance of using high-quality materials
+              to ensure that your project not only looks great, but is also
+              built to last. So if you're ready to take your outdoor space to
+              the next level, we're here to help!
+            </p>
+            <button class="btn btn-dark">Get Started</button>
+          </div>
         </div>
-        <div class="section-interior-info">
-          <p class="section-interior-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            odit recusandae, nobis, maiores aspernatur quia quam magni
-            dignissimos minima ipsum.
-          </p>
-          <button type="button" class="btn btn-dark">Get Started</button>
-        </div>
-        <div class="image-container">
+        <div class="interior-exterior__photos-container exterior__photos">
           <img
-            class="image-left"
+            class="interior-exterior__photos-container--photo"
             src="img/exteriors/exteriors-1.jpg"
-            alt="kitchen interior"
+            alt="First kitchen interior photo"
           />
           <img
-            class="image-right"
+            class="interior-exterior__photos-container--photo"
             src="img/exteriors/exteriors-2.jpg"
-            alt="kitchen interior 2"
+            alt="Second kitchen interior photo"
           />
         </div>
       </div>
     </section>
 
     <!-- GALLERY -->
-    <section id="section-gallery-and-testimonials">
-      <div class="section-header">
-        <div>
-          <h2 class="section-header-text">Snaps from some of our interiors.</h2>
+    <section class="section section__gallery hidden" id="section-gallery">
+      <div class="slider__head gallery__slider-head">
+        <div class="slider__head--text">
+          <h2>Snaps from some of our interiors.</h2>
         </div>
-        <div id="controls">
-          <button
-            type="button"
-            class="slider-btn-area previous"
-            onclick="prev()"
-          >
+        <div id="slider__head--controls">
+          <button class="slider__head--controls__btn previous" onclick="prev()">
             <i class="fa-solid fa-angle-left"></i>
           </button>
-          <button type="button" class="slider-btn-area next" onclick="next()">
+          <button class="slider__head--controls__btn next" onclick="next()">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
       </div>
 
-      <div class="gallery">
-        <div class="container-fluid">
-          <div class="slider-wrap">
-            <div id="slider-main" class="slider-main">
-              <div class="item">
-                <img
-                  src="img/gallery/gallery-image-1.jpg"
-                  alt="Gallery photo 1"
-                  class="gallery-image"
-                />
-                <div class="detail-box">
-                  <h5>Central Park</h5>
-                  <p>Shops, Hotel parking, offices</p>
-                </div>
-              </div>
+      <div class="slider__content gallery__slider-content">
+        <div id="slider__content--gallery" class="slider__content--main">
+          <div class="slider__content--item gallery__item">
+            <img
+              src="img/gallery-image-1.jpg"
+              alt="first gallery interior design"
+              class="gallery__image"
+            />
+            <div class="gallery__text-box">
+              <h5 class="gallery__text-box--heading">Marista Hotel</h5>
+              <p class="gallery__text-box--description">
+                Lekki, Lagos, Nigeria.
+              </p>
+            </div>
+          </div>
 
-              <div class="item">
-                <img
-                  src="img/gallery/gallery-image-2.jpg"
-                  alt="Gallery photo 2"
-                  class="gallery-image"
-                />
-                <div class="detail-box">
-                  <h5>Central Park</h5>
-                  <p>Shops, Hotel parking, offices</p>
-                </div>
-              </div>
+          <div class="slider__content--item gallery__item">
+            <img
+              src="img/gallery-image-2.jpg"
+              alt="second gallery interior design"
+              class="gallery__image"
+            />
+            <div class="gallery__text-box">
+              <h5 class="gallery__text-box--heading">West View Homes</h5>
+              <p class="gallery__text-box--description">
+                Los Angeles, CA, USA.
+              </p>
+            </div>
+          </div>
 
-              <div class="item">
-                <img
-                  src="img/gallery/gallery-image-3.jpg"
-                  alt="Gallery photo 3"
-                  class="gallery-image"
-                />
-                <div class="detail-box">
-                  <h5>Central Park</h5>
-                  <p>Shops, Hotel parking, offices</p>
-                </div>
-              </div>
+          <div class="slider__content--item gallery__item">
+            <img
+              src="img/gallery-image-3.jpg"
+              alt="third gallery interior design"
+              class="gallery__image"
+            />
+            <div class="gallery__text-box">
+              <h5 class="gallery__text-box--heading">Central Park</h5>
+              <p class="gallery__text-box--description">Seattle, WA, USA.</p>
+            </div>
+          </div>
 
-              <div class="item">
-                <img
-                  src="img/gallery/gallery-image-4.jpg"
-                  alt="Gallery photo 4"
-                  class="gallery-image"
-                />
-                <div class="detail-box">
-                  <h5>Central Park</h5>
-                  <p>Shops, Hotel parking, offices</p>
-                </div>
-              </div>
+          <div class="slider__content--item gallery__item">
+            <img
+              src="img/gallery-image-4.jpg"
+              alt="fourth gallery interior design"
+              class="gallery__image"
+            />
+            <div class="gallery__text-box">
+              <h5 class="gallery__text-box--heading">Mina Gardens</h5>
+              <p class="gallery__text-box--description">
+                G.R.A, Port-Harcourt, Nigeria.
+              </p>
+            </div>
+          </div>
 
-              <div class="item">
-                <img
-                  src="img/gallery/gallery-image-5.jpg"
-                  alt="Gallery photo 5"
-                  class="gallery-image"
-                />
-                <div class="detail-box">
-                  <h5>Central Park</h5>
-                  <p>Shops, Hotel parking, offices</p>
-                </div>
-              </div>
+          <div class="slider__content--item gallery__item">
+            <img
+              src="img/gallery-image-5.jpg"
+              alt="fifth gallery interior design"
+              class="gallery__image"
+            />
+            <div class="gallery__text-box">
+              <h5 class="gallery__text-box--heading">Pearl Homes</h5>
+              <p class="gallery__text-box--description">
+                San Francisco, CA, USA.
+              </p>
             </div>
           </div>
         </div>
@@ -322,105 +521,158 @@
     </section>
 
     <!-- ABOUT US -->
-    <section class="section" id="section-about-us">
-      <div class="about-container">
+    <section class="section section__about hidden" id="section-about">
+      <div class="about__photo-container">
         <img
-          class="about-image"
+          class="about__photo-container--photo"
           src="img/about-image.jpg"
-          alt="An interior used in our 'about us' section"
+          alt="An interior palor design"
         />
-        <div class="about-description">
-          <div class="about-icons">
-            <div class="icon-container">
-              <img
-                class="icon-position"
-                src="img/icons/about/mail-icon.svg"
-                alt="mail icon"
-              />
-            </div>
+      </div>
+      <div class="about__content-container">
+        <div class="about__contact-logos contact-address">
+          <a class="contact-address__link" href="#">
+            <img
+              class="contact-address__link--logo"
+              src="img/icons/about/mail-icon.svg"
+              alt="email logo"
+            />
+          </a>
 
-            <div class="icon-container">
-              <img
-                class="icon-position"
-                src="img/icons/about/twitter-icon.svg"
-                alt="twitter icon"
-              />
-            </div>
+          <a class="contact-address__link" href="#">
+            <img
+              class="contact-address__link--logo"
+              src="img/icons/about/twitter-icon.svg"
+              alt="twitter logo"
+            />
+          </a>
 
-            <div class="icon-container">
-              <img
-                class="icon-position"
-                src="img/icons/about/github-icon.svg"
-                alt="github icon"
-              />
-            </div>
-          </div>
-          <div class="about-text-header">
-            <h2>About Us</h2>
-            <img class="underline" src="img/rectangle.svg" alt="" />
-          </div>
-          <p class="about-text-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            debitis obcaecati maxime fugiat voluptate quisquam libero nemo eius
-            optio minus nobis mollitia, molestias magni soluta! Ipsam soluta
-            tempore aliquid porro!
+          <a class="contact-address__link" href="#">
+            <img
+              class="contact-address__link--logo"
+              src="img/icons/about/github-icon.svg"
+              alt="github logo"
+            />
+          </a>
+        </div>
+        <div class="about__text-box">
+          <h2 class="about__text-box--heading">
+            A<span class="about__text-box--heading__sub">bout</span> Us
+          </h2>
+          <p class="about__text-box--description">
+            We believe that your home should be a reflection of your personal
+            style and a place where you feel truly comfortable and happy. That's
+            why we offer a range of design services to help you create the home
+            of your dreams. We have the skills and experience to make it happen.
+            From consultations to full project management, our team of talented
+            and experienced designers will work with you to ensure that every
+            aspect of your design project is handled with care and attention to
+            detail. So if you're ready to transform your space, we're here to
+            help!
           </p>
-          <button type="button" class="btn btn-dark">Get Started</button>
+          <button class="about__button btn btn-dark">Get Started</button>
         </div>
       </div>
     </section>
 
     <!-- CREDITS -->
-    <section class="section" id="section-credits">
-      <div class="card-postion first-card">
-        <img src="img/icons/smiley-face.svg" alt="Smiley face icon" />
-        <div class="credit-text">
-          <h5>Passionated Designers</h5>
-          <p>lorem ipsum is simply dummy test of the printing</p>
+    <section class="section section__credits hidden" id="section-credits">
+      <div class="credits">
+        <div class="credits__cards credits__cards--first-card">
+          <img
+            class="credits__cards--icons"
+            src="img/icons/smiley-face.svg"
+            alt="Smiley face icon"
+          />
+          <div class="credits__text-box">
+            <h5 class="credits__text-box--heading">Passionated Designers</h5>
+            <p class="credits__text-box--description">
+              Our designers are passionate about their profession because they
+              love the process of creating beautiful and functional spaces that
+              enhance people's lives.
+            </p>
+          </div>
+        </div>
+
+        <div class="credits__cards credits__cards--second-card">
+          <img
+            class="credits__cards--icons"
+            src="img/icons/circle-heart-light.svg"
+            alt="Heart icon"
+          />
+          <div class="credits__text-box">
+            <h5 class="credits__text-box--heading">
+              Love to Build Relationships
+            </h5>
+            <p class="credits__text-box--description">
+              We value our customers by going above and beyond to meet their
+              needs, exceed their expectations and to build trust and rapport
+              with them.
+            </p>
+          </div>
+        </div>
+
+        <div class="credits__cards credits__cards--third-card">
+          <img
+            class="credits__cards--icons"
+            src="img/icons/stacked.svg"
+            alt="stacked cards icon"
+          />
+          <div class="credits__text-box">
+            <h5 class="credits__text-box--heading">
+              Best Architecture in Town
+            </h5>
+            <p class="credits__text-box--description">
+              Our portfolio showcases a wide range of projects, from modern and
+              contemporary to traditional and historical, that demonstrate our
+              versatility and expertise.
+            </p>
+          </div>
+        </div>
+
+        <div class="credits__cards credits__cards--fourth-card">
+          <img
+            class="credits__cards--icons"
+            src="img/icons/stacked.svg"
+            alt="stacked cards icon"
+          />
+          <div class="credits__text-box">
+            <h5 class="credits__text-box--heading">
+              Authentic and Affordable Services
+            </h5>
+            <p class="credits__text-box--description">
+              Our services are genuine and authentic. We put in the work to
+              create sustainable products at affordable prices.
+            </p>
+          </div>
+        </div>
+
+        <div class="credits__photo-container">
+          <img
+            class="credits__photo-container--photo"
+            src="img/credit-image.jpg"
+            alt="Bathroom design"
+          />
         </div>
       </div>
-
-      <div class="card-postion second-card">
-        <img
-          src="img/icons/circle-heart-light.svg"
-          alt=" Circle heart icon (light)"
-        />
-        <div class="credit-text">
-          <h5>Love to Build History</h5>
-          <p>lorem ipsum is simply dummy test of the printing</p>
-        </div>
-      </div>
-
-      <div class="card-postion third-card">
-        <img src="img/icons/stacked.svg" alt="stacked card icon" />
-        <div class="credit-text">
-          <h5>Best Arichitecture in Town</h5>
-          <p>lorem ipsum is simply dummy test of the printing</p>
-        </div>
-      </div>
-
-      <img src="img/credit-image.jpg" alt="Bathroom design" />
     </section>
 
     <!-- TESTIMONAL -->
-    <section class="section" id="section-gallery-and-testimonials">
-      <div class="section-header">
-        <div>
-          <h2 class="section-header-text">
-            See What People are Saying About Us.
-          </h2>
-        </div>
-        <div id="controls">
+    <section
+      class="section hidden section__testimonials"
+      id="section-testimonials"
+    >
+      <div class="slider__head testimonials__slider-head">
+        <h2 class="slider__head--text">See What People are Saying About Us.</h2>
+        <div id="slider__head--controls">
           <button
-            type="button"
-            class="slider-btn-area"
+            class="slider__head--controls__btn"
             onclick="prevTestimonialBtn()"
           >
             <i class="fa-solid fa-angle-left"></i>
           </button>
           <button
-            type="button"
-            class="slider-btn-area"
+            class="slider__head--controls__btn"
             onclick="nextTestimonialBtn()"
           >
             <i class="fa-solid fa-angle-right"></i>
@@ -428,157 +680,124 @@
         </div>
       </div>
 
-      <div class="testimonials">
-        <div class="container-fluid">
-          <div class="slider-wrap">
-            <div id="slider-testimonial" class="slider-main">
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    class="quote-icon"
-                    src="img/icons/quote-left.svg"
-                    alt="left quote"
-                  />
-                  <h5 class="testimonial-header">
-                    Results given are Outstanding.
-                  </h5>
-                  <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Dolor facere nam
-                    optio soluta, voluptatem.
-                  </p>
-                  <div class="author-container">
-                    <img
-                      src="img/testimonials/user-image-1.jpg"
-                      alt=""
-                      class="testimonial-photo"
-                    />
-                    <div class="initials">
-                      <h5 class="testimonial-name">Kristen Edward</h5>
-                      <p class="testimonial-position">CEO, Philips</p>
-                    </div>
-                  </div>
-                </div>
+      <div class="slider__content">
+        <div id="slider__content--testimonial" class="slider__content--main">
+          <div class="slider__content--item testimonial">
+            <img
+              class="testimonial__quote-icon"
+              src="img/icons/quote-left.svg"
+              alt="open quotation icon"
+            />
+            <h5 class="testimonial__header">Results given are Outstanding.</h5>
+            <p class="testimonial__text">
+              I recently hired Furnita to design my dream kitchen, and I
+              couldn't be happier with the result. From the initial consultation
+              to the final installation, the team was professional, helpful, and
+              a pleasure to work with. They listened to my vision and helped
+              bring it to life, and the end result exceeded my expectations. I
+              highly recommend Furnita for anyone looking for top-notch design
+              services.
+            </p>
+            <div class="testimonial__author-container">
+              <img
+                src="img/testimonials/user-image-1.jpg"
+                alt="passport photograph"
+                class="testimonial__author-container--photo"
+              />
+              <div class="testimonial__initials">
+                <h5 class="testimonial__initials--name">Kristen Edward</h5>
+                <p class="testimonial__initials--position">CEO, Philips</p>
               </div>
+            </div>
+          </div>
 
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    class="quote-icon"
-                    src="img/icons/quote-left.svg"
-                    alt="left quote"
-                  />
-                  <h5 class="testimonial-header">
-                    Highly Satisfied with Their Service
-                  </h5>
-                  <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Dolor facere nam
-                    optio soluta, voluptatem.
-                  </p>
-                  <div class="author-container">
-                    <img
-                      src="img/testimonials/user-image-5.jpg"
-                      alt=""
-                      class="testimonial-photo"
-                    />
-                    <div class="initials">
-                      <h5 class="testimonial-name">Homer Banks</h5>
-                      <p class="testimonial-position">
-                        Product Manager, Aweb Digital
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="slider__content--item testimonial">
+            <img
+              class="testimonial__quote-icon"
+              src="img/icons/quote-left.svg"
+              alt="open quotation icon"
+            />
+            <h5 class="testimonial__header">
+              Highly Satisfied with Their Service
+            </h5>
+            <p class="testimonial__text">
+              As a first-time homebuyer, I was overwhelmed by the prospect of
+              designing and decorating my new space. Furnita was a lifesaver,
+              providing me with helpful guidance and support every step of the
+              way. They listened to my ideas and helped me create a home that
+              feels like it was made just for me. I can't thank Furnita enough
+              for their amazing work.
+            </p>
+            <div class="testimonial__author-container">
+              <img
+                src="img/testimonials/user-image-2.jpg"
+                alt="passport photograph"
+                class="testimonial__author-container--photo"
+              />
+              <div class="testimonial__initials">
+                <h5 class="testimonial__initials--name">Ivanka Johnson</h5>
+                <p class="testimonial__initials--position">
+                  Product Manager, Aweb Digital
+                </p>
               </div>
+            </div>
+          </div>
 
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    class="quote-icon"
-                    src="img/icons/quote-left.svg"
-                    alt="left quote"
-                  />
-                  <h5 class="testimonial-header">
-                    Results given are Outstanding.
-                  </h5>
-                  <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Dolor facere nam
-                    optio soluta, voluptatem.
-                  </p>
-                  <div class="author-container">
-                    <img
-                      src="img/testimonials/user-image-3.jpg"
-                      alt=""
-                      class="testimonial-photo"
-                    />
-                    <div class="initials">
-                      <h5 class="testimonial-name">Lucas Moldi</h5>
-                      <p class="testimonial-position">
-                        Product Manager, LotDesign
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="slider__content--item testimonial">
+            <img
+              class="testimonial__quote-icon"
+              src="img/icons/quote-left.svg"
+              alt="open quotation icon"
+            />
+            <h5 class="testimonial__header">Very Professional and Reliable.</h5>
+            <p class="testimonial__text">
+              I have worked with Furnita on several projects over the years, and
+              they always deliver outstanding results. Their team is
+              professional, reliable, and a joy to work with. They have a keen
+              eye for design and are always up-to-date on the latest trends and
+              techniques. I highly recommend Furnita for anyone looking to
+              update their home.
+            </p>
+            <div class="testimonial__author-container">
+              <img
+                src="img/testimonials/user-image-3.jpg"
+                alt=""
+                class="testimonial__author-container--photo"
+              />
+              <div class="testimonial__initials">
+                <h5 class="testimonial__initials--name">Lucas Moldi</h5>
+                <p class="testimonial__initials--position">
+                  Product Manager, LotDesign
+                </p>
               </div>
+            </div>
+          </div>
 
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    class="quote-icon"
-                    src="img/icons/quote-left.svg"
-                    alt="left quote"
-                  />
-                  <h5 class="testimonial-header">
-                    Results given are Outstanding.
-                  </h5>
-                  <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Dolor facere nam
-                    optio soluta, voluptatem.
-                  </p>
-                  <div class="author-container">
-                    <img
-                      src="img/testimonials/user-image-1.jpg"
-                      alt=""
-                      class="testimonial-photo"
-                    />
-                    <div class="initials">
-                      <h5 class="testimonial-name">Kristen Edward</h5>
-                      <p class="testimonial-position">CEO, Philips</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonial">
-                  <img
-                    class="quote-icon"
-                    src="img/icons/quote-left.svg"
-                    alt="left quote"
-                  />
-                  <h5 class="testimonial-header">
-                    Results given are Outstanding.
-                  </h5>
-                  <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Dolor facere nam
-                    optio soluta, voluptatem.
-                  </p>
-                  <div class="author-container">
-                    <img
-                      src="img/testimonials/user-image-1.jpg"
-                      alt=""
-                      class="testimonial-photo"
-                    />
-                    <div class="initials">
-                      <h5 class="testimonial-name">Kristen Edward</h5>
-                      <p class="testimonial-position">CEO, Philips</p>
-                    </div>
-                  </div>
-                </div>
+          <div class="slider__content--item testimonial">
+            <img
+              class="testimonial__quote-icon"
+              src="img/icons/quote-left.svg"
+              alt="open quotation icon"
+            />
+            <h5 class="testimonial__header">Top-notch Creativity.</h5>
+            <p class="testimonial__text">
+              I have used Furnita for multiple projects in my home, and each
+              time I have been blown away by their creativity and attention to
+              detail. They have a unique ability to understand my style and
+              bring my vision to life, and I have received so many compliments
+              on the finished product.
+            </p>
+            <div class="testimonial__author-container">
+              <img
+                src="img/testimonials/user-image-4.jpg"
+                alt="passport photograph"
+                class="testimonial__author-container--photo"
+              />
+              <div class="testimonial__initials">
+                <h5 class="testimonial__initials--name">Patrick Reeds</h5>
+                <p class="testimonial__initials--position">
+                  Mechanical Engineer
+                </p>
               </div>
             </div>
           </div>
@@ -586,144 +805,201 @@
       </div>
     </section>
 
-    <!-- MAIL SUBSRIPTION -->
-    <section class="section" id="section-mail-subscription">
-      <div class="subscription-container">
-        <div class="subscription-text-icons">
-          <img
-            class="small-icons position position-heart-icon-1"
-            src="img/icons/heart-icon.svg"
-            alt="Heart icon 1"
-          />
-          <img
-            class="normal-icons position position-refresh-icon"
-            src="img/icons/refresh-icon.svg"
-            alt="Refresh icon"
-          />
-          <img
-            class="hero-logos position position-circle-heart-icon-1"
-            src="img/icons/circle-heart-icon.svg"
-            alt="circle heart icon"
-          />
-          <img
-            class="small-icons position position-heart-icon-2"
-            src="img/icons/heart-icon.svg"
-            alt="Heart icon 2"
-          />
-          <img
-            class="hero-logos position position-facebook-icon"
-            src="img/icons/facebook-icon.svg"
-            alt="Facebook logo icon"
-          />
-          <img
-            class="hero-logos position position-share-money-icon"
-            src="img/icons/share-money-icon.svg"
-            alt="Money icon"
-          />
-          <div class="text">
-            <h1>Subscribe To Be a Part of Our Community</h1>
+    <!-- MAIL SUBSCRIPTION -->
+    <section
+      class="section section__mail-subscription hidden"
+      id="section-mail-subscription"
+    >
+      <div class="mail-subscription">
+        <img
+          class="mail-subscription__icons--small-icons mail-subscription__icons-rotate-minus-30-deg mail-subscription__icons--heart-icon-1 mail-subscription__icons--position"
+          src="img/icons/heart-icon.svg"
+          alt="regular heart icon"
+        />
+        <img
+          class="mail-subscription__icons--normal-icons mail-subscription__icons--rotate-30-deg mail-subscription__icons--refresh-icon mail-subscription__icons--position"
+          src="img/icons/refresh-icon.svg"
+          alt="refresh icon"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-minus-30-deg mail-subscription__icons--circle-heart-icon-1 mail-subscription__icons--position"
+          src="img/icons/circle-heart-icon.svg"
+          alt="circle heart icon"
+        />
+        <img
+          class="mail-subscription__icons--small-icons mail-subscription__icons--rotate-30-deg mail-subscription__icons--heart-icon-2 mail-subscription__icons--position"
+          src="img/icons/heart-icon.svg"
+          alt="regular heart icon"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-minus-30-deg mail-subscription__icons--facebook-icon mail-subscription__icons--position"
+          src="img/icons/facebook-icon.svg"
+          alt="Facebook logo"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-45-deg mail-subscription__icons--share-money-icon mail-subscription__icons--position"
+          src="img/icons/share-money-icon.svg"
+          alt="share money icon"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-30-deg mail-subscription__icons--circle-heart-icon-2 mail-subscription__icons--position"
+          src="img/icons/circle-heart-icon.svg"
+          alt="circle heart icon"
+        />
+        <img
+          class="mail-subscription__icons--normal-icons mail-subscription__icons--rotate-minus-45-deg mail-subscription__icons--quote-icon mail-subscription__icons--position"
+          src="img/icons/quote-icon.svg"
+          alt="Qoute icon"
+        />
+        <img
+          class="mail-subscription__icons--normal-icons mail-subscription__icons--rotate-30-deg mail-subscription__icons--heart-icon-3 mail-subscription__icons--position"
+          src="img/icons/heart-icon.svg"
+          alt="heart-icon icon"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-45-deg mail-subscription__icons--twitter-icon mail-subscription__icons--position"
+          src="img/icons/twitter-icon.svg"
+          alt="Twitter icon"
+        />
+        <img
+          class="mail-subscription__icons--large-icons mail-subscription__icons--rotate-30-deg mail-subscription__icons--share-icon mail-subscription__icons--position"
+          src="img/icons/share-icon.svg"
+          alt=" Share icon"
+        />
+        <img
+          class="mail-subscription__icons--normal-icons mail-subscription__icons--rotate-minus-45-deg mail-subscription__icons--heart-icon-4 mail-subscription__icons--position"
+          src="img/icons/heart-icon.svg"
+          alt="regular heart icon"
+        />
+        <div class="mail-subscription__cta">
+          <h3 class="mail-subscription__cta--text-heading">
+            Subscribe To Be a Part of Our Community
+          </h3>
+
+          <div class="form-container mail-subcription__cta--form">
+            <form class="form" action="" method="post">
+              <img
+                class="form__icon"
+                src="img/icons/mail-subcription-icon.svg"
+                alt="mailbox icon"
+              />
+              <input
+                type="email"
+                class="email-input"
+                name=""
+                id=""
+                placeholder="Enter your Email address"
+              />
+              <button class="form__btn">Subscribe now</button>
+            </form>
           </div>
-          <img
-            class="hero-logos position position-circle-heart-icon-2"
-            src="img/icons/circle-heart-icon.svg"
-            alt="circle heart icon"
-          />
-          <img
-            class="normal-icons position position-quote-icon"
-            src="img/icons/quote-icon.svg"
-            alt="Qoute icon"
-          />
-          <img
-            class="normal-icons position position-thumbs-up-icon"
-            src="img/icons/thumbs-up-icon.svg"
-            alt="Thumbs up icon"
-          />
-          <img
-            class="hero-logos position position-twitter-icon"
-            src="img/icons/twitter-icon.svg"
-            alt="Twitter icon"
-          />
-          <img
-            class="share-icon position position-share-icon"
-            src="img/icons/share-icon.svg"
-            alt=" Share icon"
-          />
         </div>
-        <div class="form-container">
-          <form action="" method="post">
-            <img src="img/icons/mail-subcription-icon.svg" alt="" />
-            <input
-              type="email"
-              class="email-input"
-              name=""
-              id=""
-              placeholder="Enter your Email address"
+      </div>
+    </section>
+
+    <!-- CONTACT AND LINKS -->
+    <section
+      class="section section__contact hidden"
+      id="section-contact-and-links"
+    >
+      <div class="contact">
+        <!-- Contact Intro -->
+        <div class="contact__intro">
+          <div class="contact__intro--logo-container">
+            <img
+              class="contact__intro--main-logo"
+              src="img/logos/furnita-home.svg"
+              alt="Furnita logo"
             />
-            <button type="button" class="btn btn-dark">Subscribe now</button>
-          </form>
-        </div>
-      </div>
-    </section>
+            <div class="contact__logos contact-address">
+              <a class="contact-address__link" href="#">
+                <img
+                  class="contact-address__link--logo"
+                  src="img/icons/about/mail-icon.svg"
+                  alt="email logo"
+                />
+              </a>
 
-    <!-- CONTACT US -->
-    <section class="section" id="section-contact-us">
-      <div class="contact-info-1">
-        <div class="quick-about centered">
-          <img src="img/logos/furnita-home.svg" alt="Furnita logo" />
-          <p class="quick-about-info">
-            This website was developed by Patrick Itoro Okuku.
-          </p>
-          <!-- contacts icons (twitter, github) -->
-        </div>
-      </div>
+              <a class="contact-address__link" href="#">
+                <img
+                  class="contact-address__link--logo"
+                  src="img/icons/about/twitter-icon.svg"
+                  alt="twitter logo"
+                />
+              </a>
 
-      <div class="contact-info-2">
-        <div class="contact centered">
-          <h5>Contact Us</h5>
-          <p class="res-moblie">+234-907-178-8380</p>
-          <p class="res-moblie">patrickokuku1@gmail.com</p>
-        </div>
-        <div class="responsive-tab">
-          <div class="pages centered">
-            <h5>Pages</h5>
-            <p class="res-moblie">Home</p>
-            <p class="res-moblie">About Us</p>
-            <p class="res-moblie">Testimonial</p>
+              <a class="contact-address__link" href="#">
+                <img
+                  class="contact-address__link--logo"
+                  src="img/icons/about/github-icon.svg"
+                  alt="github logo"
+                />
+              </a>
+            </div>
           </div>
-          <div class="company centered">
-            <h5>Company</h5>
-            <p class="res-moblie">Terms & Conditions</p>
-            <p class="res-moblie">Privacy Policy</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="section-contact-us-mobile">
-      <div class="contact-mobile-display">
-        <div class="quick-about center">
-          <img src="img/logos/furnita-home.svg" alt="Furnita logo" />
-          <p class="quick-about-info">
-            This website was developed by Patrick Itoro Okuku.
+          <p class="contact__intro--text">
+            We offer a wide range of benefits to homeowners looking to update or
+            redesign their spaces. By working with our experienced team of
+            designers, you can receive expert guidance and support throughout
+            the design process. The agency can help you clarify your vision,
+            create a cohesive design plan, and choose the right materials,
+            finishes, and fixtures to bring your ideas to life. Additionally, we
+            can help you stay within your budget and timeline, and ensure that
+            your project is completed on time and on budget. Most importantly,
+            we will help you create a home that is beautiful, functional, and
+            reflective of your personal style.
           </p>
         </div>
-        <div class="contact center">
-          <h5>Contact Us</h5>
-        </div>
-        <div class="pages center">
-          <h5>Pages</h5>
-        </div>
-        <div class="company center">
-          <h5>Company</h5>
+
+        <div class="contact__links">
+          <!-- Contact Address -->
+          <div class="contact__address contact__items">
+            <h3 class="contact__heading">Contact Us</h3>
+            <p class="contact__address--phone">
+              <a href="">+234-907-178-8380</a>
+            </p>
+            <p class="contact__address--email">
+              <a href="mailto:patrickokuku1@gmail.com"
+                >patrickokuku1@gmail.com</a
+              >
+            </p>
+          </div>
+          <!-- Contact pages -->
+          <div class="contact__pages contact__items">
+            <h3 class="contact__heading">Pages</h3>
+            <p class="contact__pages--home"><a href="#">Home</a></p>
+            <p class="contact__pages--about">
+              <a href="#section-about">About Us</a>
+            </p>
+            <p class="contact__pages--gallery">
+              <a href="#section-gallery">Gallery</a>
+            </p>
+            <p class="contact__pages--top-designs">
+              <a href="#section-top-designs">Top Designs</a>
+            </p>
+            <p class="contact__pages--testimonial">
+              <a href="#section-testimonials">Testimonials</a>
+            </p>
+          </div>
+          <!-- More Info -->
+          <div class="contact__more-info contact__items">
+            <h3 class="contact__heading">Company</h3>
+            <p class="contact__more-info--terms">
+              <a href="#">Terms & Conditions</a>
+            </p>
+            <p class="contact__more-info--policies">
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="copy-rights">
-      <h6>Copyrights @ Furnita. All Rights Reserved.</h6>
+    <footer class="footer copy-rights">
+      <h6 class="footer__text">Copyrights @ Furnita. All Rights Reserved.</h6>
     </footer>
 
-    <div class="pop-screen hidden">
+    <!-- <div class="pop-screen hidden">
       <button class="btn-close-pop-screen">&times;</button>
       <h2 class="pop-screen-header">
         Create an Account<br />
@@ -739,15 +1015,6 @@
         <button class="btn">Next step &rarr;</button>
       </form>
     </div>
-    <div class="overlay hidden"></div>
-
-    <!-- Boostrap js & popper CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="script.js"></script>
+    <div class="overlay hidden"></div> -->
   </body>
 </html>

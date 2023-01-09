@@ -1,0 +1,60 @@
+.form-container {
+  background-color: var(--form-color);
+  border-radius: 5px;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 60%;
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: auto;
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+
+    &__icon {
+      height: 3rem;
+    }
+
+    &__btn {
+      height: 3rem;
+      padding: 0.7rem 1.2rem;
+      width: auto;
+      background: rgb(21, 21, 21);
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+      }
+    }
+
+    .email-input {
+      margin: 0 2.2rem;
+      flex-grow: 1;
+      padding: 5px;
+      outline: none;
+      border: 1px solid var(--text-color-1);
+      border-radius: 5px;
+      background: inherit;
+      transition: background 0.25s, box-shadow 0.25s;
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin: 0.5rem 1.5rem;
+      }
+    }
+
+    .email-input:focus {
+      background: white;
+      box-shadow: 0 0 2px var(--text-color);
+    }
+  }
+}

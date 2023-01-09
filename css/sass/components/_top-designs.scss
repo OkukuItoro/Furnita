@@ -1,0 +1,50 @@
+.top-designs {
+  &__designer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 5px 0 0 5px;
+    bottom: 4rem;
+    left: 12rem;
+    background: linear-gradient(to right, rgb(20, 20, 20), transparent);
+    width: 24rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      left: 7rem;
+      width: 22rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: 4rem;
+    }
+
+    &--photo {
+      width: 5.6rem;
+      border-radius: 50%;
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 4.6rem;
+      }
+    }
+
+    &--name {
+      color: white;
+      font-weight: bold;
+      margin-inline-start: 0.6rem;
+      font-size: 1.2rem;
+    }
+
+    &--contact {
+      &:last-child {
+        margin-left: 2rem;
+        img {
+          height: 2.2rem;
+        }
+        a {
+          margin: 0.6rem;
+        }
+      }
+    }
+  }
+}

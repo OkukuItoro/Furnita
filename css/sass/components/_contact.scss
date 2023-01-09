@@ -1,0 +1,65 @@
+/* CONTACT AND LINKS */
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column;
+  }
+
+  // contact intro, contact links
+  & > * {
+    padding: 1rem;
+    text-align: start;
+  }
+
+  &__intro {
+    width: 50%;
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 100%;
+    }
+
+    // furnita logo
+    &--main-logo {
+      margin-right: 3rem;
+      width: 35%;
+    }
+    &--logo-container {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      // contact social logos
+      &:last-child {
+        width: 65%;
+        margin-right: auto;
+        img {
+          width: 15%;
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    // contact addresses, pages, company
+    & > * {
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}

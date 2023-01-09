@@ -1,0 +1,111 @@
+/* MAIL SUBCRIPTION */
+.mail-subscription {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 3rem;
+  position: relative;
+  width: 65%;
+  height: 30rem;
+
+  @media only screen and (max-width: $bp-smaller) {
+    width: auto;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  // ICONS
+  &__icons {
+    filter: drop-shadow(4px, 6px, 10px, #585858);
+
+    // icon position
+    &--position {
+      position: absolute;
+
+      @media only screen and (max-width: $bp-large) {
+        display: none;
+      }
+    }
+    &--heart-icon-1 {
+      top: 9.5rem;
+      left: 11rem;
+    }
+    &--refresh-icon {
+      top: 4rem;
+      left: 20rem;
+    }
+    &--circle-heart-icon-1 {
+      top: 8rem;
+      left: 15rem;
+    }
+    &--heart-icon-2 {
+      bottom: 12rem;
+      left: 12rem;
+    }
+    &--facebook-icon {
+      color: var(--text-color);
+      left: 8rem;
+    }
+    &--share-money-icon {
+      bottom: 7rem;
+      left: 5rem;
+    }
+    &--circle-heart-icon-2 {
+      top: 8rem;
+      right: 16rem;
+    }
+    &--quote-icon {
+      top: 4rem;
+      right: 12rem;
+    }
+    &--twitter-icon {
+      right: 5rem;
+      bottom: 5rem;
+    }
+    &--heart-icon-3 {
+      right: 10rem;
+      top: 10rem;
+    }
+    &--share-icon {
+      top: 4rem;
+      right: 5rem;
+    }
+    &--heart-icon-4 {
+      bottom: 11rem;
+      right: 10rem;
+    }
+
+    // icon sizes
+    &--large-icons {
+      height: 4rem;
+    }
+    &--medium-icon {
+      height: 3rem;
+    }
+    &--normal-icons {
+      height: 2.2rem;
+    }
+    &--small-icons {
+      width: 1.6rem;
+    }
+
+    // transform rotation
+    &--rotate-30-deg {
+      transform: rotate(30deg);
+    }
+    &--rotate-minus-30-deg {
+      transform: rotate(-30deg);
+    }
+    &--rotate-45-deg {
+      transform: rotate(45deg);
+    }
+    &--rotate-minus-45-deg {
+      transform: rotate(-45deg);
+    }
+  }
+}

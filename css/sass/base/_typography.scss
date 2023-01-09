@@ -1,0 +1,280 @@
+/*NAVBAR */
+.navbar {
+  &__items {
+    &--links {
+      font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+/* HERO */
+.hero {
+  &__text-box {
+    &--heading {
+      margin-bottom: 1.5rem;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      font-size: 3.5rem;
+    }
+    &--description {
+      font-size: 1.5rem;
+    }
+
+    &--cta {
+      font-size: 1.4rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* INTERIORS & EXTERIOR */
+.interior-exterior {
+  // Text content
+  &__text-box {
+    width: 40%;
+    padding: 0.5rem;
+    margin: 1rem 1rem 0rem 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
+      margin: 1rem 1rem 6rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 90%;
+    }
+
+    &--heading {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      font-size: 3rem;
+
+      &__sub {
+        border-bottom: 0.3rem solid var(--text-color);
+      }
+    }
+
+    &--paragraph {
+      margin: 3rem 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* BEDROOM INTERIOR (*SPECIFIC)*/
+.bedroom-interior {
+  &__text-box {
+    width: 40%;
+    padding: 0.5rem;
+    margin: 1rem 1rem 0rem 4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
+      margin: 1rem 1rem 5rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 90%;
+    }
+
+    &--heading {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      font-size: 3rem;
+
+      &__sub {
+        border-bottom: 0.3rem solid var(--text-color);
+      }
+    }
+    &--paragraph {
+      margin: 3rem 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* TOP DESIGNS */
+.top-designs {
+  &__heading {
+    padding-left: 10rem;
+    font-size: 1.8rem;
+    display: inline-block;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding-left: 3rem;
+      font-size: 1.4rem;
+    }
+
+    span {
+      border-bottom: 0.3rem solid var(--text-color);
+    }
+  }
+}
+
+/* SLIDER */
+.slider {
+  &__head {
+    font-size: 1.8rem;
+    display: inline-block;
+
+    @media only screen and (max-width: $bp-small) {
+      &--text {
+        width: 60%;
+      }
+    }
+  }
+}
+
+/* GALLERY */
+.gallery {
+  &__text-box {
+    margin-top: 4rem;
+
+    font-size: 1.6rem;
+    &--heading {
+      padding: 1rem 0;
+    }
+    &--description {
+    }
+  }
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  &__header {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__initials {
+    padding: 1.5rem;
+
+    &--name {
+      font-size: 1.3rem;
+    }
+
+    &--position {
+      font-size: 1.23rem;
+    }
+  }
+}
+
+/* ABOUT */
+.about {
+  &__text-box {
+    width: 65%;
+    padding: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 55%;
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 83%;
+    }
+
+    &--heading {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+
+      &__sub {
+        border-bottom: 5px solid var(--text-color);
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    &--description {
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* BENEFITS CARDS */
+.credits {
+  // Text content styling for each card
+  &__text-box {
+    margin-left: 1rem;
+    padding: 0.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    &--heading {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    &--description {
+      font-size: 0.9rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/* MAIL SUBSCRIPTION */
+.mail-subscription {
+  &__cta {
+    &--text-heading {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+/* CONTACT AND LINKS */
+.contact {
+  &__intro {
+    &--text {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.4rem;
+    font-size: 2.6rem;
+  }
+
+  &__address,
+  &__pages,
+  &__more-info {
+    & > * {
+      font-size: 1.5rem;
+      padding: 0.4rem;
+    }
+  }
+}
+
+.footer {
+  &__text {
+    font-size: 1.4rem;
+  }
+}

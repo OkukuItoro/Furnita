@@ -1,0 +1,11 @@
+.contact-address {
+  display: flex;
+
+  &__link {
+    margin: 1rem;
+
+    &--logo {
+      height: 4rem;
+    }
+  }
+}

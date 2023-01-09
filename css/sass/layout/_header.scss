@@ -1,0 +1,54 @@
+/* HEADER */
+.header {
+  position: relative;
+  &__navbar {
+    background: rgba(255, 255, 255, 0.594);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__hero {
+    height: 85vh;
+    padding-left: 5rem;
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      background-position: left;
+      padding: 2.5rem;
+      height: 70vh;
+    }
+
+    // Hero content container
+    &--content {
+      width: 50%;
+      padding: 1rem;
+      margin-block-start: 4rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 92%;
+        padding: 0.3rem;
+      }
+
+      // Text box
+      &__text-box {
+        margin-bottom: 2rem;
+      }
+
+      // Cta
+      &__cta {
+        & > * {
+          margin-block: 1rem;
+        }
+        a {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

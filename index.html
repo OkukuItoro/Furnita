@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="img/logos/Furnita-logo.png"
-    />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,11 +30,7 @@
     <header class="header section__header">
       <!-- NAVIGATION BAR -->
       <nav class="header__navbar navbar">
-        <img
-          class="navbar__logo"
-          src="img/logos/nav-logo.svg"
-          alt="Furnita logo"
-        />
+        <img class="navbar__logo" src="img/nav-logo.svg" alt="Furnita logo" />
         <img
           id="mobile-navbar__open"
           class="navbar__mobile-menu navbar__mobile-menu--open"
@@ -96,7 +88,9 @@
             </p>
           </div>
           <div class="header__hero--content__cta">
-            <button class="btn btn-dark btn-lg">Get Started</button>
+            <button class="btn btn-dark btn-lg header__hero--content__btn">
+              Get Started
+            </button>
             <a class="hero__text-box--cta" href="#">Learn more</a>
           </div>
         </div>
@@ -111,13 +105,25 @@
       <div class="interior-exterior">
         <div class="interior-exterior__photos-container home-interior__photos">
           <img
+            srcset="
+              img/home-interior-1-sm.jpg  320w,
+              img/home-interior-1-md.jpg  640w,
+              img/home-interior-1-lg.jpg 1920w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img/home/home-interior-1.png"
+            src="img/home-interior-1-md.jpg"
             alt="First living room interior photo"
           />
           <img
+            srcset="
+              img/home-interior-2-sm.jpg  321w,
+              img/home-interior-2-md.jpg  640w,
+              img/home-interior-2-lg.jpg 1920w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img/home/home-interior-2.png"
+            src="img/home-interior-2-md.jpg"
             alt="Second living room interior photo"
           />
         </div>
@@ -172,13 +178,25 @@
           class="interior-exterior__photos-container kitchen-interior__photos"
         >
           <img
+            srcset="
+              img/kitchen-interior-1-sm.jpg  320w,
+              img/kitchen-interior-1-md.jpg  640w,
+              img/kitchen-interior-1-lg.jpg 1920w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300px) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img/kitchen/kitchen-interior-1.png"
+            src="img/kitchen-interior-1-md.jpg"
             alt="first kitchen interior photo"
           />
           <img
+            srcset="
+              img/kitchen-interior-2-sm.jpg  320w,
+              img/kitchen-interior-2-md.jpg  640w,
+              img/kitchen-interior-2-lg.jpg 1920w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300px) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img//kitchen/kitchen-interior-2.png"
+            src="img/kitchen-interior-2-md.jpg"
             alt="second kitchen interior photo"
           />
         </div>
@@ -194,11 +212,20 @@
       </div>
       <div class="primary-slider top-designs__slider">
         <div class="slide">
-          <img src="img/top-designs-1-md.jpg" alt="Photo 1" />
+          <img
+            srcset="
+              img/top-designs-1-sm.jpg  640w,
+              img/top-designs-1-md.jpg 1920w,
+              img/top-designs-1-lg.jpg 2400w
+            "
+            sizes="(max-width: 600) 95vw, (max-width: 990px) 76vw, (min-width: 2300px) 60vw"
+            src="img/top-designs-1-md.jpg"
+            alt="Photo 1"
+          />
           <div class="top-designs__designer">
             <img
               class="top-designs__designer--photo"
-              src="img/top-designers/designer-1.jpg"
+              src="img/top-designers/designer-1-md.jpg"
               alt="first designer avatar"
             />
             <div class="top-designs__designer--contact">
@@ -232,11 +259,20 @@
           </div>
         </div>
         <div class="slide">
-          <img src="img/top-designs-2-md.jpg" alt="Photo 2" />
+          <img
+            srcset="
+              img/top-designs-2-sm.jpg  640w,
+              img/top-designs-2-md.jpg 1920w,
+              img/top-designs-2-lg.jpg 2400w
+            "
+            sizes="(max-width: 600) 95vw, (max-width: 990px) 76vw, (min-width: 2300px) 60vw"
+            src="img/top-designs-2-md.jpg"
+            alt="Photo 2"
+          />
           <div class="top-designs__designer">
             <img
               class="top-designs__designer--photo"
-              src="img/top-designers/designer-2.jpg"
+              src="img/top-designers/designer-2-md.jpg"
               alt="second designer avatar"
             />
             <div class="top-designs__designer--contact">
@@ -270,11 +306,20 @@
           </div>
         </div>
         <div class="slide">
-          <img src="img/top-designs-3-lg.jpg" alt="Photo 3" />
+          <img
+            srcset="
+              img/top-designs-3-sm.jpg  640w,
+              img/top-designs-3-md.jpg 1920w,
+              img/top-designs-3-lg.jpg 2400w
+            "
+            sizes="(max-width: 600px) 95vw, (max-width: 990px) 76vw, (min-width: 2300px) 60vw"
+            src="img/top-designs-3-md.jpg"
+            alt="Photo 3"
+          />
           <div class="top-designs__designer">
             <img
               class="top-designs__designer--photo"
-              src="img/top-designers/designer-3.jpg"
+              src="img/top-designers/designer-3-md.jpg"
               alt="third designer avatar"
             />
             <div class="top-designs__designer--contact">
@@ -308,11 +353,20 @@
           </div>
         </div>
         <div class="slide">
-          <img src="img/top-designs-4-md.jpg" alt="Photo 4" />
+          <img
+            srcset="
+              img/top-designs-4-sm.jpg  640w,
+              img/top-designs-4-md.jpg 1920w,
+              img/top-designs-4-lg.jpg 2400w
+            "
+            sizes="(max-width: 600px) 95vw, (max-width: 990px) 76vw, (min-width: 2300px) 60vw"
+            src="img/top-designs-4-md.jpg"
+            alt="Photo 4"
+          />
           <div class="top-designs__designer">
             <img
               class="top-designs__designer--photo"
-              src="img/top-designers/designer-4.jpg"
+              src="img/top-designers/designer-4-md.jpg"
               alt="fourth designer avatar"
             />
             <div class="top-designs__designer--contact">
@@ -359,13 +413,25 @@
           class="bedroom-interior__photos-container bedroom-interior__photos"
         >
           <img
+            srcset="
+              img/bedroom-image-1-sm.jpg  308w,
+              img/bedroom-image-1-md.jpg  615w,
+              img/bedroom-image-1-lg.jpg 1230w
+            "
+            sizes="(max-width: 600px) 30vw, (min-width: 2300px) 35vw"
             class="bedroom-interior__photos-container--photo"
-            src="img/bedroom/bedroom-image-1.png"
+            src="img/bedroom-image-1-md.jpg"
             alt="First bedroom interior photo"
           />
           <img
+            srcset="
+              img/bedroom-image-2-sm.jpg  320w,
+              img/bedroom-image-2-md.jpg  640w,
+              img/bedroom-image-2-lg.jpg 1280w
+            "
+            sizes="(max-width: 600px) 30vw, (min-width: 2300px) 35vw"
             class="bedroom-interior__photos-container--photo"
-            src="img/bedroom/bedroom-image-2.png"
+            src="img/bedroom-image-2-md.jpg"
             alt="Second bedroom interior photo"
           />
         </div>
@@ -418,13 +484,25 @@
         </div>
         <div class="interior-exterior__photos-container exterior__photos">
           <img
+            srcset="
+              img/exteriors-1-sm.jpg  318w,
+              img/exteriors-1-md.jpg  636w,
+              img/exteriors-1-lg.jpg 1272w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300px) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img/exteriors/exteriors-1.jpg"
+            src="img/exteriors-1-md.jpg"
             alt="First kitchen interior photo"
           />
           <img
+            srcset="
+              img/exteriors-2-sm.jpg  318w,
+              img/exteriors-2-md.jpg  636w,
+              img/exteriors-2-lg.jpg 1272w
+            "
+            sizes="(max-width: 600px) 28vw, (min-width: 2300px) 20vw"
             class="interior-exterior__photos-container--photo"
-            src="img/exteriors/exteriors-2.jpg"
+            src="img/exteriors-2-md.jpg"
             alt="Second kitchen interior photo"
           />
         </div>
@@ -451,7 +529,13 @@
         <div id="slider__content--gallery" class="slider__content--main">
           <div class="slider__content--item gallery__item">
             <img
-              src="img/gallery-image-1.jpg"
+              srcset="
+                img/gallery-image-1-sm.jpg  320w,
+                img/gallery-image-1-md.jpg  640w,
+                img/gallery-image-1-lg.jpg 1920w
+              "
+              sizes="(max-width: 600px) 43vw, (max-width: 990px) 33vw, (min-width: 1800px) 26vw"
+              src="img/gallery-image-1-md.jpg"
               alt="first gallery interior design"
               class="gallery__image"
             />
@@ -465,7 +549,13 @@
 
           <div class="slider__content--item gallery__item">
             <img
-              src="img/gallery-image-2.jpg"
+              srcset="
+                img/gallery-image-2-sm.jpg  321w,
+                img/gallery-image-2-md.jpg  640w,
+                img/gallery-image-2-lg.jpg 1920w
+              "
+              sizes="(max-width: 600px) 37vw, (max-width: 990px) 28vw, (min-width: 1800px) 22vw"
+              src="img/gallery-image-2-md.jpg"
               alt="second gallery interior design"
               class="gallery__image"
             />
@@ -479,7 +569,13 @@
 
           <div class="slider__content--item gallery__item">
             <img
-              src="img/gallery-image-3.jpg"
+              srcset="
+                img/gallery-image-3-sm.jpg  320w,
+                img/gallery-image-3-md.jpg  640w,
+                img/gallery-image-3-lg.jpg 1920w
+              "
+              sizes="(max-width: 600px) 43vw, (max-width: 990px) 35vw, (min-width: 1800px) 26vw"
+              src="img/gallery-image-3-md.jpg"
               alt="third gallery interior design"
               class="gallery__image"
             />
@@ -491,7 +587,13 @@
 
           <div class="slider__content--item gallery__item">
             <img
-              src="img/gallery-image-4.jpg"
+              srcset="
+                img/gallery-image-4-sm.jpg  288w,
+                img/gallery-image-4-md.jpg  640w,
+                img/gallery-image-4-lg.jpg 1920w
+              "
+              sizes="(max-width: 600px) 33vw, (max-width: 990px) 25vw, (min-width: 1800px) 20vw"
+              src="img/gallery-image-4-md.jpg"
               alt="fourth gallery interior design"
               class="gallery__image"
             />
@@ -505,7 +607,13 @@
 
           <div class="slider__content--item gallery__item">
             <img
-              src="img/gallery-image-5.jpg"
+              srcset="
+                img/gallery-image-5-sm.jpg  300w,
+                img/gallery-image-5-md.jpg  640w,
+                img/gallery-image-5-lg.jpg 1920w
+              "
+              sizes="(max-width: 600px) 43vw, (max-width: 990px) 35vw, (min-width: 1800px) 26vw"
+              src="img/gallery-image-5-md.jpg"
               alt="fifth gallery interior design"
               class="gallery__image"
             />
@@ -525,7 +633,13 @@
       <div class="about__photo-container">
         <img
           class="about__photo-container--photo"
-          src="img/about-image.jpg"
+          srcset="
+            img/about-image-sm.jpg  414w,
+            img/about-image-md.jpg 1654w,
+            img/about-image-lg.jpg 4105w
+          "
+          sizes="(max-width: 1400px) 45vw, (min-width: 1800px) 40vw"
+          src="img/about-image-md.jpg"
           alt="An interior palor design"
         />
       </div>
@@ -649,8 +763,14 @@
 
         <div class="credits__photo-container">
           <img
+            srcset="
+              img/credit-image-sm.jpg  674w,
+              img/credit-image-md.jpg 1347w,
+              img/credit-image-lg.jpg 2000w
+            "
+            sizes="(max-width: 900px) 55vw, (min-width: 2300px) 65vw"
             class="credits__photo-container--photo"
-            src="img/credit-image.jpg"
+            src="img/credit-image-md.jpg"
             alt="Bathroom design"
           />
         </div>
@@ -700,7 +820,13 @@
             </p>
             <div class="testimonial__author-container">
               <img
-                src="img/testimonials/user-image-1.jpg"
+                srcset="
+                  img/user-image-1-sm.jpg 272w,
+                  img/user-image-1-md.jpg 542w,
+                  img/user-image-1-lg.jpg 955w
+                "
+                sizes="(max-width: 600px) 5vw, (max-width: 990px) 8vw, (min-width: 2300px) 5vw"
+                src="img/user-image-1-md.jpg"
                 alt="passport photograph"
                 class="testimonial__author-container--photo"
               />
@@ -730,7 +856,13 @@
             </p>
             <div class="testimonial__author-container">
               <img
-                src="img/testimonials/user-image-2.jpg"
+                srcset="
+                  img/user-image-2-sm.jpg  272w,
+                  img/user-image-2-md.jpg  542w,
+                  img/user-image-2-lg.jpg 1084w
+                "
+                sizes="(max-width: 600px) 5vw, (max-width: 990px) 8vw, (min-width: 2300px) 5vw"
+                src="img/user-image-2-md.jpg"
                 alt="passport photograph"
                 class="testimonial__author-container--photo"
               />
@@ -760,7 +892,13 @@
             </p>
             <div class="testimonial__author-container">
               <img
-                src="img/testimonials/user-image-3.jpg"
+                srcset="
+                  img/user-image-3-sm.jpg  259w,
+                  img/user-image-3-md.jpg  517w,
+                  img/user-image-3-lg.jpg 1034w
+                "
+                sizes="(max-width: 600px) 5vw, (max-width: 990px) 8vw, (min-width: 2300px) 5vw"
+                src="img/user-image-3-md.jpg"
                 alt=""
                 class="testimonial__author-container--photo"
               />
@@ -789,7 +927,13 @@
             </p>
             <div class="testimonial__author-container">
               <img
-                src="img/testimonials/user-image-4.jpg"
+                srcset="
+                  img/user-image-4-sm.jpg  264w,
+                  img/user-image-4-md.jpg  526w,
+                  img/user-image-4-lg.jpg 1052w
+                "
+                sizes="(max-width: 600px) 5vw, (max-width: 990px) 8vw, (min-width: 2300px) 5vw"
+                src="img/user-image-4-md.jpg"
                 alt="passport photograph"
                 class="testimonial__author-container--photo"
               />
@@ -908,7 +1052,7 @@
           <div class="contact__intro--logo-container">
             <img
               class="contact__intro--main-logo"
-              src="img/logos/furnita-home.svg"
+              src="img/furnita-home.svg"
               alt="Furnita logo"
             />
             <div class="contact__logos contact-address">

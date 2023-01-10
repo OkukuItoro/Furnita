@@ -254,7 +254,12 @@ html {
 }
 @media only screen and (max-width: 47.5em) {
   html {
-    font-size: 53%;
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 47%;
   }
 }
 
@@ -359,11 +364,27 @@ a {
   font-weight: 700;
   font-size: 3.5rem;
 }
+@media only screen and (max-width: 61.875em) {
+  .hero__text-box--heading {
+    font-size: 4.7rem;
+    margin-bottom: 2.5rem;
+  }
+}
 .hero__text-box--description {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 61.875em) {
+  .hero__text-box--description {
+    font-size: 2.5rem;
+  }
+}
 .hero__text-box--cta {
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 61.875em) {
+  .hero__text-box--cta {
+    font-size: 2rem;
+  }
 }
 .hero__text-box--cta:hover {
   text-decoration: underline;
@@ -391,12 +412,22 @@ a {
   font-weight: 700;
   font-size: 3rem;
 }
+@media only screen and (max-width: 61.875em) {
+  .interior-exterior__text-box--heading {
+    font-size: 3.5rem;
+  }
+}
 .interior-exterior__text-box--heading__sub {
   border-bottom: 0.3rem solid var(--text-color);
 }
 .interior-exterior__text-box--paragraph {
   margin: 3rem 0;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 61.875em) {
+  .interior-exterior__text-box--paragraph {
+    font-size: 2rem;
+  }
 }
 
 /* BEDROOM INTERIOR (*SPECIFIC)*/
@@ -590,8 +621,8 @@ a {
 }
 .btn__navbar {
   display: inline-block;
-  height: 2.9rem;
-  width: 8rem;
+  height: 3rem;
+  width: 9rem;
   padding-block: 0.7rem;
 }
 .btn__light {
@@ -1362,24 +1393,33 @@ a {
           margin-inline-end: auto;
 }
 @media only screen and (max-width: 61.875em) {
-  .navbar__items--buttons {
-    display: inline-block;
+  .navbar__items .links__last-item {
+    margin: 0;
   }
-  .navbar__items--buttons > * {
-    margin: 1rem;
-    padding-inline: 1.7rem;
-    height: 3.5rem;
-    width: 9rem;
-  }
-}
-.navbar__items--links:hover {
-  font-weight: bold;
 }
 .navbar__items--buttons {
   padding: 0.5rem 1rem;
 }
+@media only screen and (max-width: 61.875em) {
+  .navbar__items--buttons {
+    display: inline-block;
+    margin-block: 4rem;
+    transform: scale(1.5);
+  }
+}
 .navbar__items--buttons > * {
   margin: 0.4rem 1rem;
+}
+@media only screen and (max-width: 61.875em) {
+  .navbar__items--buttons > * {
+    margin: 1rem;
+    padding-inline: 1.7rem;
+    height: 3.5rem;
+    width: 11rem;
+  }
+}
+.navbar__items--links:hover {
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -1398,15 +1438,13 @@ a {
   padding-left: 5rem;
   background-image: url(../img/hero-image.jpg);
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 31.875em) {
+@media only screen and (max-width: 61.875em) {
   .header__hero {
-    background-position: left;
-    padding: 2.5rem;
-    height: 70vh;
+    justify-content: center;
+    padding: 0;
   }
 }
 .header__hero--content {
@@ -1415,10 +1453,9 @@ a {
   -webkit-margin-before: 4rem;
           margin-block-start: 4rem;
 }
-@media only screen and (max-width: 31.875em) {
+@media only screen and (max-width: 61.875em) {
   .header__hero--content {
-    width: 92%;
-    padding: 0.3rem;
+    width: 80%;
   }
 }
 .header__hero--content__text-box {
@@ -1427,8 +1464,20 @@ a {
 .header__hero--content__cta > * {
   margin-block: 1rem;
 }
+@media only screen and (max-width: 61.875em) {
+  .header__hero--content__cta > * {
+    margin-block: 3rem;
+  }
+}
 .header__hero--content__cta a {
-  margin-left: 2rem;
+  margin-left: 3rem;
+}
+@media only screen and (max-width: 61.875em) {
+  .header__hero--content__btn {
+    height: 5rem;
+    width: 18rem;
+    font-size: 2rem;
+  }
 }
 
 /* SECTIONS */
@@ -1437,6 +1486,12 @@ a {
           margin-block-end: 12rem;
   /* CONTACT AND CREDITS */
   /* ABOUT */
+}
+@media only screen and (max-width: 61.875em) {
+  .section {
+    -webkit-margin-after: 17rem;
+            margin-block-end: 17rem;
+  }
 }
 .section__interior-exterior, .section__credits, .section__mail-subscription {
   padding-block: 3rem;

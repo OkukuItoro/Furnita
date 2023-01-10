@@ -19,13 +19,27 @@
       font-family: "Cormorant Garamond", serif;
       font-weight: 700;
       font-size: 3.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 4.7rem;
+        margin-bottom: 2.5rem;
+      }
     }
+
     &--description {
       font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2.5rem;
+      }
     }
 
     &--cta {
       font-size: 1.4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+      }
       &:hover {
         text-decoration: underline;
       }
@@ -55,6 +69,10 @@
       font-weight: 700;
       font-size: 3rem;
 
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3.5rem;
+      }
+
       &__sub {
         border-bottom: 0.3rem solid var(--text-color);
       }
@@ -63,6 +81,10 @@
     &--paragraph {
       margin: 3rem 0;
       font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+      }
     }
   }
 }

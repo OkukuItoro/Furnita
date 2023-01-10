@@ -72,25 +72,25 @@
   &__photo-container {
     animation: movesUp 0.9s ease-in;
 
-    @media only screen and (max-width: $bp-medium) {
-      animation: movesUp 0.9s ease-in 1.4s backwards;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //   animation: movesUp 0.9s ease-in 1.4s backwards;
+    // }
   }
 
   &__header {
     animation: moveInLeft 0.9s ease-in 1s backwards;
 
-    @media only screen and (max-width: $bp-medium) {
-      animation: moveInLeft 0.9s ease-in backwards;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //   animation: moveInLeft 0.9s ease-in backwards;
+    // }
   }
 
   &__text-body {
     animation: movesDown 1.1s ease-in 1.5s backwards;
 
-    @media only screen and (max-width: $bp-medium) {
-      animation: movesDown 0.9s ease-in 1.2s backwards;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //   animation: movesDown 0.9s ease-in 1.2s backwards;
+    // }
   }
 }
 

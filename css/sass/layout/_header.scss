@@ -14,15 +14,19 @@
     padding-left: 5rem;
     background-image: url(../img/hero-image.jpg);
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: $bp-smallest) {
-      background-position: left;
-      padding: 2.5rem;
-      height: 70vh;
+    @media only screen and (max-width: $bp-medium) {
+      //   background-position: left;
+      justify-content: center;
+      padding: 0;
     }
+
+    // @media only screen and (max-width: $bp-smallest) {
+    //   padding: 2.5rem;
+    //   height: 70vh;
+    // }
 
     // Hero content container
     &--content {
@@ -30,9 +34,8 @@
       padding: 1rem;
       margin-block-start: 4rem;
 
-      @media only screen and (max-width: $bp-smallest) {
-        width: 92%;
-        padding: 0.3rem;
+      @media only screen and (max-width: $bp-medium) {
+        width: 80%;
       }
 
       // Text box
@@ -44,9 +47,22 @@
       &__cta {
         & > * {
           margin-block: 1rem;
+
+          @media only screen and (max-width: $bp-medium) {
+            margin-block: 3rem;
+          }
         }
         a {
-          margin-left: 2rem;
+          margin-left: 3rem;
+        }
+      }
+
+      // cta button
+      &__btn {
+        @media only screen and (max-width: $bp-medium) {
+          height: 5rem;
+          width: 18rem;
+          font-size: 2rem;
         }
       }
     }

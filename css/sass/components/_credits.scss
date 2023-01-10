@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-medium) {
     flex-wrap: wrap;
   }
 
@@ -21,7 +21,7 @@
     width: 28rem;
     transition: all ease-in-out 0.6s;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
       justify-content: space-evenly;
       background: rgba(243, 246, 244);
@@ -41,60 +41,28 @@
     &--first-card {
       top: -1.5rem;
       left: 40rem;
-      @media only screen and (max-width: $bp-large) {
-        top: -2.5rem;
-        left: 33rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        left: 23rem;
-      }
     }
+
     &--second-card {
       left: 23rem;
       bottom: 10rem;
-
-      @media only screen and (max-width: $bp-large) {
-        left: 16rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        left: 10rem;
-      }
     }
+
     &--third-card {
       right: 37rem;
       bottom: -1rem;
-
-      @media only screen and (max-width: $bp-large) {
-        bottom: -2rem;
-        right: 32rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        right: 23rem;
-      }
     }
+
     &--fourth-card {
       right: 25rem;
       top: 12rem;
-
-      @media only screen and (max-width: $bp-large) {
-        right: 15rem;
-        top: 9rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        right: 9rem;
-        top: 9rem;
-      }
     }
 
     // Card icons
     &--icons {
       height: 3.5rem;
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-medium) {
         height: 5.5rem;
       }
     }
@@ -108,10 +76,6 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-      width: 55%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
       display: none;
     }
   }

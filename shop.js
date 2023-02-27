@@ -302,6 +302,7 @@ if (window.innerWidth < 990) {
 loading(loadingScreen, contentItems, 2000);
 
 /** Cart Array */
+
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 /** Cart State

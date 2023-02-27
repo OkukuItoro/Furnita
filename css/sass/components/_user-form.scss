@@ -1,0 +1,84 @@
+.user-form {
+  padding: 1rem;
+
+  &__heading {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+
+    &--delivery {
+      margin-top: 5rem;
+    }
+  }
+
+  &__booking-text {
+    font-size: 1.4rem;
+  }
+
+  // label and input
+  &__input {
+    padding: 0.5rem;
+    margin-block-end: 1.5rem;
+
+    &--names {
+      display: flex;
+    }
+    &--first-name {
+      margin-inline-end: 2rem;
+    }
+    &--last-name,
+    &--first-name {
+      width: 50%;
+    }
+
+    &--label {
+      margin-bottom: 0.6rem;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    &--input {
+      line-height: 1.2rem;
+      display: block;
+      width: 100%;
+      margin-block-start: 0.3rem;
+      padding: 3px;
+      outline: none;
+      border-radius: 5px;
+      transition: background 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--text-color);
+
+      &:focus {
+        background: white;
+        box-shadow: 1px 1px 5px var(--text-color);
+      }
+    }
+  }
+
+  &__btn {
+    margin-inline-start: 1.8rem;
+    height: 2.5rem;
+    width: 10rem;
+  }
+
+  &__link {
+    text-align: center;
+    border-radius: 4px;
+    padding-block: 0.7rem;
+    width: 14rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: white;
+    background-color: black;
+  }
+
+  &__forget-password-link {
+    font-size: 1.1rem;
+    color: blue;
+    display: flex;
+    justify-content: end;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

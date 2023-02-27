@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user account</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9d7bdce75a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="app-navbar">
+      <h1 class="app-navbar__logo-text">furnita</h1>
+      <ul class="app-navbar__links">
+        <li class="app-navbar__links--items">
+          <a href="/shop.html">
+            <i class="fa-solid fa-2x fa-shop"></i>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a class="app-nav-links__items" href="/cart.html">
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
+            <p
+              id="cart-items-length"
+              class="app-nav-links__items--cart-items-length"
+            >
+              0
+            </p>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a href="/user_account.html">
+            <i class="fa-solid fa-2x fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="user-account">
+      <div class="user-account__avatar">
+        <h1 id="user-avatar-text" class="user-account__avatar--text">OP</h1>
+      </div>
+      <div id="user-greeting" class="user-account__greeting">
+        Welcome, Patrick
+      </div>
+      <div class="user-account__details user-account__form">
+        <form class="user-form">
+          <div class="user-account__form--inline">
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="first-name"
+                >First Name</label
+              >
+              <input
+                id="first-name"
+                class="user-form__input--input"
+                type="text"
+              />
+            </div>
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="last-name"
+                >Last Name</label
+              >
+              <input
+                id="last-name"
+                class="user-form__input--input"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="user-form__input user-account__form--email">
+            <label class="user-form__input--label" for="email-address"
+              >Email Address</label
+            >
+            <input
+              id="email-address"
+              class="user-form__input--input"
+              type="email"
+            />
+          </div>
+
+          <h2 class="user-form__heading user-form__heading--delivery">
+            Delivery Details
+          </h2>
+          <div
+            id="user-form-address"
+            class="user-form__input user-account__form--block"
+          >
+            <h3 id="error-text" class="error-text error-text__hidden">
+              Please fill in the required information
+            </h3>
+            <label class="user-form__input--label" for="address">Address</label>
+            <input
+              id="address"
+              class="input-form user-form__input--input"
+              type="input"
+            />
+          </div>
+          <div class="user-account__form--inline">
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="city">City</label>
+              <input
+                id="city"
+                class="input-form user-form__input--input"
+                type="input"
+              />
+            </div>
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="state">State</label>
+              <input
+                id="state"
+                class="input-form user-form__input--input"
+                type="input"
+              />
+            </div>
+          </div>
+          <div class="user-account__form--inline">
+            <div id="user-form-zip" class="user-form__input">
+              <label class="user-form__input--label" for="zip">Zip Code</label>
+              <input
+                id="zip"
+                class="input-form user-form__input--input"
+                type="text"
+              />
+            </div>
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="country"
+                >Country</label
+              >
+              <input
+                id="country"
+                class="input-form user-form__input--input"
+                type="text"
+              />
+            </div>
+          </div>
+          <!-- <button
+            class="user-form__btn btn user-account__form--btn"
+            type="submit"
+          >
+            Edit
+          </button> -->
+          <button
+            class="user-form__btn btn user-account__form--btn"
+            type="submit"
+            onclick="saveData(event)"
+          >
+            Confirm
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const totalCartItems = document.getElementById("cart-items-length");
+      const userGreeting = document.getElementById("user-greeting");
+      const userAvatarText = document.getElementById("user-avatar-text");
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const userData = JSON.parse(localStorage.getItem("userData")) || [];
+
+      const errorText = document.getElementById("error-text");
+      const deliveryFormInput = Array.from(
+        document.getElementsByClassName("input-form")
+      );
+
+      const firstName = document.getElementById("first-name");
+      const lastName = document.getElementById("last-name");
+      const emailAddress = document.getElementById("email-address");
+
+      const address = document.getElementById("address");
+      const city = document.getElementById("city");
+      const zipCode = document.getElementById("zip");
+      const state = document.getElementById("state");
+      const country = document.getElementById("country");
+
+      userGreeting.innerHTML = `Welcome, ${userData.firstName}. 🎉`;
+
+      const firstCharFirstName = userData.firstName[0];
+      const firstCharLastName = userData.lastName[0];
+      userAvatarText.innerHTML = `${firstCharFirstName}${firstCharLastName}`;
+
+      cart == []
+        ? (totalCartItems.innerHTML = "0")
+        : (totalCartItems.innerHTML = `${cart.length}`);
+
+      // update User's data
+      firstName.value = userData.firstName;
+      lastName.value = userData.lastName;
+      emailAddress.value = userData.emailAddress;
+
+      // if delivery details exist
+      if (userData.address) {
+        address.value = userData.address;
+        city.value = userData.city;
+        zipCode.value = userData.zipCode;
+        state.value = userData.state;
+        country.value = userData.country;
+      }
+
+      function saveData(e) {
+        if (
+          address.value === "" ||
+          city.value === "" ||
+          zipCode.value === "" ||
+          state.value === "" ||
+          country.value === ""
+        ) {
+          e.preventDefault();
+          errorText.classList.add("error-text__visible");
+          deliveryFormInput.forEach((inputForm) => {
+            if (inputForm.value == "" || inputForm.value.length < 2)
+              inputForm.classList.add("error-border");
+            else {
+              inputForm.classList.remove("error-border");
+            }
+          });
+        } else {
+          errorText.classList.remove("error-text__visible");
+
+          userData["address"] = address.value;
+          userData["city"] = city.value;
+          userData["zipCode"] = zipCode.value;
+          userData["state"] = state.value;
+          userData["country"] = country.value;
+
+          localStorage.setItem("userData", JSON.stringify(userData));
+        }
+      }
+    </script>
+  </body>
+</html>

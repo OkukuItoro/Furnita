@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booking confirmation</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="app-navbar">
+      <h1 class="app-navbar__logo-text">furnita</h1>
+      <ul class="app-navbar__links">
+        <li class="app-navbar__links--items">
+          <a href="/shop.html">
+            <i class="fa-solid fa-2x fa-shop"></i>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a class="app-nav-links__items" href="/cart.html">
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
+            <p
+              id="cart-items-length"
+              class="app-nav-links__items--cart-items-length"
+            >
+              0
+            </p>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a href="/user_account.html">
+            <i class="fa-solid fa-2x fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="loading-screen" class="loading__screen">
+      <div class="loading__container">
+        <div class="loading__visible loading__spinner"></div>
+        <img
+          src="img/Furnita-logo.png"
+          alt="furnita logo"
+          class="loading__logo"
+        />
+      </div>
+    </section>
+    <div class="booking-confirmed loading__hidden">
+      <div class="booking-confirmed__box">
+        <i class="fa-solid fa-check-mark booking-confirmed__icon"></i>
+        <h1 class="booking-confirmed__heading">Success</h1>
+        <p class="booking-confirmed__text">
+          Thank you for choosing our service. We will do our best to accommodate
+          your schedule and confirm your appointment as soon as possible. If you
+          have any questions or concerns, please do not hesitate to contact us.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const totalCartItems = document.getElementById("cart-items-length");
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      cart == []
+        ? (totalCartItems.innerHTML = "0")
+        : (totalCartItems.innerHTML = `${cart.length}`);
+
+      // loading selectors
+      const loadingScreen = document.getElementById("loading-screen");
+      const loginContainer = document.getElementById("login-page");
+
+      // loading
+      setTimeout(() => {
+        loadingScreen.remove();
+
+        loginContainer.classList.remove("loading__hidden");
+        loginContainer.classList.add("loading__visible");
+      }, 3000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+    <script defer src="cart.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9d7bdce75a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="app-navbar">
+      <h1 class="app-navbar__logo-text">furnita</h1>
+      <ul class="app-navbar__links">
+        <li class="app-navbar__links--items">
+          <a href="/shop.html">
+            <i class="fa-solid fa-2x fa-shop"></i>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a class="app-nav-links__items" href="/cart.html">
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
+            <p
+              id="cart-items-length"
+              class="app-nav-links__items--cart-items-length"
+            >
+              0
+            </p>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a href="/user_account.html">
+            <i class="fa-solid fa-2x fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="loading-screen" class="loading__screen">
+      <div class="loading__container">
+        <div class="loading__visible loading__spinner"></div>
+        <img
+          src="img/Furnita-logo.png"
+          alt="furnita logo"
+          class="loading__logo"
+        />
+      </div>
+    </section>
+
+    <section id="cart-screen" class="loading__hidden cart">
+      <div class="cart__tab cart__heading">
+        <div class="cart__tab--cart cart__tab--active">Cart</div>
+        &horbar;
+        <div class="cart__tab--summary">Summary</div>
+        &horbar;
+        <div class="cart__tab--payment">Payment</div>
+      </div>
+
+      <div class="cart__body">
+        <div data-tab="0" class="cart__content">
+          <div class="cart__payment">
+            <div class="cart__sub-total cart__payment--text">
+              <p class="cart__sub-total--label">subtotal</p>
+              <p id="sub-total" class="cart__sub-total--price"></p>
+            </div>
+            <div class="cart__shipping-fee cart__payment--text">
+              <p class="cart__shipping-fee--label">shipping fee</p>
+              <p id="shipping-fee" class="cart__shipping-fee--price"></p>
+            </div>
+            <div class="cart__payment--total">
+              <h2 class="cart__total--label">total</h2>
+              <h1 id="total" class="cart__total--price"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__btn">
+        <button
+          id="prev-btn"
+          class="btn"
+          style="background-color: rgb(58, 58, 58)"
+        >
+          Back
+        </button>
+        <button id="next-btn" class="btn">Next</button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -35,6 +35,12 @@ document.addEventListener("keydown", function (e) {
 });
 */
 
+// button locate function
+function goToPage(e) {
+  const page = e.target.dataset.pageName;
+  return window.location.assign(page);
+}
+
 //GALLERY SLIDER
 const sliderGallery = document.getElementById("slider__content--gallery");
 const sliderItem = sliderGallery.getElementsByClassName(
@@ -83,19 +89,24 @@ const mobileNavBtnOpen = document.getElementById("mobile-navbar__open");
 const mobileNavBtnExit = document.getElementById("mobile-navbar__exit");
 const navBarItems = document.querySelector(".navbar__items");
 
-const toggleNav = () => {
-  navBarItems.style.display = "none";
-  mobileNavBtnOpen.style.display = "block";
-  mobileNavBtnExit.style.display = "none";
-};
+if (window.innerWidth < 990) {
+  const toggleNav = () => {
+    navBarItems.style.display = "none";
+    mobileNavBtnOpen.style.display = "block";
+    mobileNavBtnExit.style.display = "none";
+  };
 
-mobileNavBtnOpen.addEventListener("click", () => {
-  navBarItems.style.display = "flex";
-  mobileNavBtnExit.style.display = "block";
-});
-mobileNavBtnExit.addEventListener("click", () => {
-  toggleNav();
-});
+  mobileNavBtnOpen.addEventListener("click", () => {
+    navBarItems.style.display = "flex";
+    mobileNavBtnExit.style.display = "block";
+  });
+  mobileNavBtnExit.addEventListener("click", () => {
+    toggleNav();
+  });
+  navBarItems.addEventListener("click", () => {
+    toggleNav();
+  });
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

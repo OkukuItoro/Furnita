@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-up portal</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__benefits">
+        <div class="sign-up-benefits">
+          <div class="sign-up-benefits__logo-box">
+            <img
+              class="sign-up-benefits__logo-box--logo"
+              src="img/Furnita-logo.png"
+              alt="furnita logo"
+            />
+            <h2 class="sign-up-benefits__logo-box--text">Furnita</h2>
+          </div>
+          <h2 class="sign-up-benefits__heading">
+            Discover the best Interior, Exterior designs & Affordable
+            Furnitures.
+          </h2>
+          <ul class="sign-up-benefits__benefits-list">
+            <li class="sign-up-benefits__benefits-list--item"></li>
+            <li class="sign-up-benefits__benefits-list--item"></li>
+            <li class="sign-up-benefits__benefits-list--item"></li>
+          </ul>
+        </div>
+      </div>
+      <div style="position: relative" class="container__form-info">
+        <div class="sign-up-details">
+          <div class="sign-up-details__login-redirect">
+            <span class="sign-up-details__login-redirect--text">
+              Already have an account?
+            </span>
+            <a href="login.html" class="sign-up-details__login-redirect--link"
+              >Login</a
+            >
+          </div>
+          <div class="sign-up-details__form">
+            <form class="user-form">
+              <h2 class="user-form__heading sign-up-details__form--input">
+                Create an Account with Furnita
+              </h2>
+              <div class="user-form__input sign-up-details__form--input">
+                <div class="user-form__input--names">
+                  <div class="user-form__input--first-name">
+                    <label class="user-form__input--label" for="first-name"
+                      >First Name</label
+                    >
+                    <input
+                      class="input-form user-form__input--input"
+                      id="first-name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="user-form__input--last-name">
+                    <label class="user-form__input--label" for="last-name"
+                      >Last Name</label
+                    >
+                    <input
+                      class="input-form user-form__input--input"
+                      id="last-name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="user-form__input sign-up-details__form--input">
+                <label class="user-form__input--label" for="email-address"
+                  >Email Address</label
+                >
+                <input
+                  class="input-form user-form__input--input"
+                  id="email-address"
+                  type="email"
+                />
+              </div>
+              <div class="user-form__input sign-up-details__form--input">
+                <label class="user-form__input--label" for="password"
+                  >Password</label
+                >
+                <input
+                  autocomplete="new-password"
+                  class="input-form user-form__input--input"
+                  id="password"
+                  type="password"
+                />
+              </div>
+              <div class="user-form__input sign-up-details__form--input">
+                <label class="user-form__input--label" for="confirm-password"
+                  >Confirm Password</label
+                >
+                <input
+                  autocomplete="new-password"
+                  class="input-form user-form__input--input"
+                  id="confirm-password"
+                  type="password"
+                />
+              </div>
+            </form>
+            <div class="sign-up__btn-container">
+              <button
+                onclick="authenticate()"
+                class="sign-up__btn-container--btn user-form__btn btn"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const userData = {};
+      const pageContainerForm = document.querySelector(".container__form-info");
+      const signUpBtn = document.querySelector(".sign-up-btn");
+      const userFirstName = document.getElementById("first-name");
+      const userLastName = document.getElementById("last-name");
+      const emailAddress = document.getElementById("email-address");
+      const password = document.getElementById("password");
+      const confirmPassword = document.getElementById("confirm-password");
+
+      function saveData() {
+        userData["firstName"] = userFirstName.value;
+        userData["lastName"] = userLastName.value;
+        userData["emailAddress"] = emailAddress.value;
+        userData["password"] = password.value;
+        console.log(userData);
+        localStorage.setItem("userData", JSON.stringify(userData));
+      }
+
+      function authenticate() {
+        if (
+          userFirstName.value === "" ||
+          userLastName.value === "" ||
+          emailAddress.value === "" ||
+          password.value === "" ||
+          confirmPassword.value === ""
+        ) {
+          let html = `
+            <div class="error-message error-message__sign-up">
+              <p>Please fill in the required information</p>
+              <p class="close-btn" style="cursor: pointer;">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else if (
+          userFirstName.value.length < 2 ||
+          userLastName.value.length < 2
+        ) {
+          let html = `
+            <div class="error-message error-message__sign-up">
+              <p>Name must be greater than two characters</p>
+              <p class="close-btn" style="cursor: pointer">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else if (password.value !== confirmPassword.value) {
+          let html = `
+            <div class="error-message error-message__sign-up">
+              <p>Passwords do not match</p>
+              <p class="close-btn" style="cursor: pointer">&times;</p>
+            </div>
+
+          `;
+
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else if (password.value.length < 6) {
+          let html = `
+            <div class="error-message error-message__sign-up">
+              <p>Password must be equal or greater than 6 characters</p>
+              <p class="close-btn" style="cursor: pointer">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else {
+          saveData();
+          return window.location.assign("/login.html");
+        }
+
+        const closeBtn = document.querySelector(".close-btn");
+
+        closeBtn.addEventListener("click", (e) => {
+          e.target.parentNode.remove();
+        });
+      }
+    </script>
+  </body>
+</html>

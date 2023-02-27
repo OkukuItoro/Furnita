@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login portal</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+  </head>
+  <body>
+    <section id="loading-screen" class="loading__screen">
+      <div class="loading__container">
+        <div class="loading__visible loading__spinner"></div>
+        <img
+          src="img/Furnita-logo.png"
+          alt="furnita logo"
+          class="loading__logo"
+        />
+      </div>
+    </section>
+    <div id="login-page" class="login-page">
+      <div class="login-form-container">
+        <div class="login-form-container__logo">
+          <img src="img/furnita-home.svg" alt="Furnita logo" />
+        </div>
+        <div style="position: relative" class="login-form-container__form">
+          <form class="user-form">
+            <div class="login-form-container__sign-up-redirect">
+              <span class="login-form-container__sign-up-redirect--text">
+                Don't have an account?
+              </span>
+              <a
+                href="sign-up.html"
+                class="login-form-container__sign-up-redirect--link"
+                >Sign up</a
+              >
+            </div>
+            <h2 class="user-form__heading">Login to your Account</h2>
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="email-address"
+                >Email Address</label
+              >
+              <input
+                class="input-form user-form__input--input"
+                id="email-address"
+                type="email"
+              />
+            </div>
+            <div class="user-form__input">
+              <label class="user-form__input--label" for="password"
+                >Password</label
+              >
+              <input
+                class="input-form user-form__input--input"
+                id="password"
+                type="password"
+              />
+            </div>
+            <a href="forget-pass.html" class="user-form__forget-password-link"
+              >forgot password</a
+            >
+          </form>
+          <button
+            onclick="authenticateUser()"
+            class="user-form__btn btn btn__dark"
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let zIndex = 0;
+      const emailAddress = document.getElementById("email-address");
+      const password = document.getElementById("password");
+      const pageContainerForm = document.querySelector(".login-form-container");
+
+      // loading selectors
+      const loadingScreen = document.getElementById("loading-screen");
+      const loginContainer = document.getElementById("login-page");
+
+      // loading
+      setTimeout(() => {
+        loadingScreen.remove();
+
+        loginContainer.classList.remove("loading__hidden");
+        loginContainer.classList.add("loading__visible");
+      }, 3000);
+
+      function authenticateUser() {
+        const userData = JSON.parse(localStorage.getItem("userData")) || {};
+        if (emailAddress.value === "" || password.value === "") {
+          let html = `
+            <div style="z-index: ${(zIndex += 1)}" class="error-message error-message__login">
+              <p>Please fill in the required information</p>
+              <p class="close-btn" style="cursor: pointer;">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else if (emailAddress.value != userData.emailAddress) {
+          let html = `
+            <div style="z-index: ${(zIndex += 1)}" class="error-message error-message__login">
+              <p>Email Address does not exist</p>
+              <p class="close-btn" style="cursor: pointer;">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else if (password.value != userData.password) {
+          let html = `
+            <div style="z-index: ${(zIndex += 1)}" class="error-message error-message__login">
+              <p>Password is incorrect</p>
+              <p class="close-btn" style="cursor: pointer;">&times;</p>
+            </div>
+
+          `;
+          pageContainerForm.insertAdjacentHTML("afterbegin", html);
+        } else {
+          return window.location.assign("/app.html");
+        }
+
+        const closeBtn = document.querySelector(".close-btn");
+
+        closeBtn.addEventListener("click", (e) => {
+          e.target.parentNode.remove();
+        });
+      }
+    </script>
+  </body>
+</html>

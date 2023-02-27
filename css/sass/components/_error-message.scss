@@ -1,0 +1,38 @@
+.error-message {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: lightcoral;
+  border-radius: 5px;
+
+  &__sign-up {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  &__login {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 2rem;
+  }
+}
+
+// custom text for user account (delivery details form)
+.error-text {
+  color: red;
+
+  &__hidden {
+    display: none;
+  }
+  &__visible {
+    display: block;
+  }
+}
+
+.error-border {
+  border: 1px solid red;
+}

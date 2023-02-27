@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online shop</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+    <script defer src="shop.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9d7bdce75a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="app-navbar shop__navbar">
+      <i
+        id="shop-side-bar-icon"
+        class="fa-solid shop__navbar--side-bar-icon fa-2x fa-bars"
+      ></i>
+      <h1 class="app-navbar__logo-text">furnita</h1>
+      <ul class="app-navbar__links">
+        <li class="app-navbar__links--items">
+          <a href="/shop.html">
+            <i class="fa-solid fa-2x fa-shop"></i>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a class="app-nav-links__items" href="/cart.html">
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
+            <p
+              id="cart-items-length"
+              class="app-nav-links__items--cart-items-length"
+            >
+              0
+            </p>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a href="/user_account.html">
+            <i class="fa-solid fa-2x fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="shop">
+      <div id="shop-side-bar" class="shop__side-bar">
+        <ul class="side-bar__links">
+          <li class="side-bar__links--item">Sofas</li>
+          <li class="side-bar__links--item">Beds</li>
+          <li class="side-bar__links--item">Tables</li>
+          <li class="side-bar__links--item">Chairs</li>
+          <li class="side-bar__links--item">Wardrobes</li>
+          <li class="side-bar__links--item">Cupboards</li>
+          <li class="side-bar__links--item">Kitchen</li>
+        </ul>
+      </div>
+      <div class="shop__content">
+        <section id="loading-screen" class="loading__screen">
+          <div class="loading__shop-container">
+            <div class="loading__visible loading__spinner"></div>
+            <img
+              src="img/Furnita-logo.png"
+              alt="furnita logo"
+              class="loading__logo"
+            />
+          </div>
+        </section>
+        <div class="shop__content--items loading__hidden"></div>
+      </div>
+    </section>
+  </body>
+</html>

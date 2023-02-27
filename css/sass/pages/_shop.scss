@@ -1,0 +1,60 @@
+.shop {
+  display: flex;
+  //   flex: 1 1 auto;
+
+  &__navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 101;
+
+    @media only screen and (max-width: $bp-medium) {
+      position: initial;
+    }
+
+    &--side-bar-icon {
+      display: none;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
+      }
+    }
+  }
+
+  &__side-bar {
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    top: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 0;
+      display: flex;
+      justify-content: center;
+      top: 5rem;
+      right: 0;
+      display: none;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      position: initial;
+    }
+
+    &--items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: var(--secondary-color);
+      padding-block: 3rem;
+    }
+  }
+}

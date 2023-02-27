@@ -1,0 +1,103 @@
+.app-navbar {
+  background-color: var(--text-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+
+  &__logo-text {
+    text-transform: uppercase;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+
+    &--items {
+      margin-inline: 1rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.app-nav-links__items {
+  position: relative;
+
+  &--cart-items-length {
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    border-radius: 40%;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+  }
+}
+
+.app-main {
+  display: block;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  &__greeting {
+    font-size: 3rem;
+  }
+
+  &__features {
+    &:not(:last-of-type) {
+      margin-block: 6rem;
+    }
+
+    /* Feature header */
+    &--header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    &--icon {
+    }
+
+    &--heading {
+      font-size: 2.6rem;
+      margin-inline-start: 2rem;
+    }
+    /**/
+
+    &--text {
+      font-size: 1.9rem;
+      width: 80%;
+      margin-bottom: 1.9rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 94%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+
+    &--btn {
+      width: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+
+      p {
+        margin-inline-start: 1rem;
+      }
+    }
+  }
+}

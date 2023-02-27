@@ -24,7 +24,7 @@
 
     <script defer src="script.js"></script>
 
-    <title>Furnita</title>
+    <title>furnita homepage</title>
   </head>
   <body>
     <header class="header section__header">
@@ -58,8 +58,18 @@
           </li>
 
           <li class="navbar__items--buttons">
-            <button class="btn btn__navbar btn__light">Login</button>
-            <button class="btn btn__navbar btn-show-popScreen responsive-btn">
+            <button
+              data-page-name="login.html"
+              onclick="goToPage(event)"
+              class="btn btn__navbar btn__light"
+            >
+              Login
+            </button>
+            <button
+              data-page-name="sign-up.html"
+              onclick="goToPage(event)"
+              class="btn btn__navbar btn-show-popScreen responsive-btn"
+            >
               Sign up
             </button>
           </li>
@@ -309,11 +319,10 @@
           <img
             srcset="
               img/top-designs-3-sm.jpg  640w,
-              img/top-designs-3-md.jpg 1920w,
               img/top-designs-3-lg.jpg 2400w
             "
             sizes="(max-width: 600px) 95vw, (max-width: 990px) 76vw, (min-width: 2300px) 60vw"
-            src="img/top-designs-3-md.jpg"
+            src="img/top-designs-3-lg.jpg"
             alt="Photo 3"
           />
           <div class="top-designs__designer">

@@ -1,0 +1,153 @@
+.cart {
+  width: 50vw;
+  margin: 5rem auto;
+  padding-block: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 85%;
+  }
+
+  &__caution {
+    text-align: center;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+
+    &--text {
+      display: inline-block;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: auto;
+    width: 65%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 75%;
+    }
+
+    & > * {
+      cursor: pointer;
+    }
+
+    &--active {
+      border-bottom: 2px solid;
+      font-weight: bold;
+    }
+  }
+
+  &__payment {
+    width: 30vw;
+    display: block;
+    margin: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      margin-top: 5rem;
+    }
+
+    & > * {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 1.5rem;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-block: 4rem;
+    button {
+      width: 15rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.summary {
+  margin-top: 3rem;
+
+  &__card {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+
+    & > * {
+      margin: 1.2rem;
+    }
+
+    &--total-payment {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+
+    &--delivery {
+    }
+  }
+
+  &__caution {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--btn {
+      font-size: 1.4rem;
+      height: 4rem;
+      width: 18rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.payment {
+  margin-top: 2rem;
+
+  & > * {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  &__form {
+    & > * {
+      margin: auto;
+    }
+    &--inline {
+      display: flex;
+      width: 80%;
+      & :first-child {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+.payment-confirmed {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    width: 50%;
+  }
+  &__heading {
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+}

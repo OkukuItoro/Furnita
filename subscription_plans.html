@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Furnita-logo.png" />
+    <title>subscription plans</title>
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9d7bdce75a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="app-navbar">
+      <h1 class="app-navbar__logo-text">furnita</h1>
+      <ul class="app-navbar__links">
+        <li class="app-navbar__links--items">
+          <a href="/shop.html">
+            <i class="fa-solid fa-2x fa-shop"></i>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a class="app-nav-links__items" href="/cart.html">
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
+            <p
+              id="cart-items-length"
+              class="app-nav-links__items--cart-items-length"
+            >
+              0
+            </p>
+          </a>
+        </li>
+        <li class="app-navbar__links--items">
+          <a href="/user_account.html">
+            <i class="fa-solid fa-2x fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="app-container">
+      <div class="app-container__standard-subscription">
+        <h2 class="app-container__heading">
+          Subsc<span class="app-container__heading--sub">ription Pl</span>ans
+        </h2>
+        <div class="app-container__standard-subscription--plans">
+          <div class="price-card price-card__basic">
+            <h2 class="price-card__heading">Basic</h2>
+            <ul class="price-card__list">
+              <li class="price-card__list--item">
+                Initial Consultation
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Design Concept:
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Detailed Floor Plan
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Project Management <span class="price-card__red">&times;</span>
+              </li>
+              <li class="price-card__list--item">
+                Detailed Design Proposal
+                <span class="price-card__red">&times;</span>
+              </li>
+              <li class="price-card__list--item">
+                Materials List <span class="price-card__red">&times;</span>
+              </li>
+              <li class="price-card__list--item">
+                Installation <span class="price-card__red">&times;</span>
+              </li>
+            </ul>
+            <button class="price-card__btn price-card__basic--btn btn">
+              Get Full Qoute
+            </button>
+          </div>
+          <div class="price-card price-card__standard">
+            <h2 class="price-card__heading">Standard</h2>
+            <ul class="price-card__list">
+              <li class="price-card__list--item">
+                Initial Consultation
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Design Concept
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Detailed Floor Plan
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Project Management
+                <span class="price-card__red"
+                  ><span class="price-card__red">&times;</span></span
+                >
+              </li>
+              <li class="price-card__list--item">
+                Detailed Design Proposal
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Materials List
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Installation <span class="price-card__red">&times;</span>
+              </li>
+            </ul>
+            <button class="price-card__btn price-card__standard--btn btn">
+              Get Full Qoute
+            </button>
+          </div>
+          <div class="price-card price-card__premium">
+            <h2 class="price-card__heading">Premium</h2>
+            <ul class="price-card__list">
+              <li class="price-card__list--item">
+                Initial Consultation
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Design Concept
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Detailed Floor Plan
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Project Management
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Detailed Design Proposal
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Materials List
+                <span class="price-card__green">&checkmark;</span>
+              </li>
+              <li class="price-card__list--item">
+                Installation <span class="price-card__green">&checkmark;</span>
+              </li>
+            </ul>
+            <button class="price-card__btn price-card__premium--btn btn">
+              Get Full Qoute
+            </button>
+          </div>
+          <div class="app-container__standard-subscription--notice">
+            Please note that this quote is valid for 30 days and subject to
+            change based on any additional services requested.
+          </div>
+        </div>
+      </div>
+
+      <div class="app-container__custom-subscription">
+        <h2 class="app-container__heading">
+          Cus<span class="app-container__heading--sub">tom Pl</span>an
+        </h2>
+
+        <!-- <p class="app-container__custom-subscription--description">
+           It
+          includes a wide range of services such as space planning, color
+          consultation, furniture selection and sourcing, lighting design, and
+          more.
+            
+        </p> -->
+
+        <div class="app-container__custom-subscription--body">
+          <div class="app-container__custom-subscription--photo">
+            <img src="img/about-image-md.jpg" alt="" />
+          </div>
+          <div
+            class="app-container__custom-subscription--text-box app-container__custom-subscription--grey"
+          >
+            <p
+              class="custom-subscription__text custom-subscription__text--black"
+            >
+              Our Custom Plan is a personalized and flexible approach to
+              interior design, tailored to meet the specific needs of our
+              clients.
+            </p>
+          </div>
+        </div>
+        <div class="app-container__custom-subscription--body">
+          <div
+            class="app-container__custom-subscription--text-box app-container__custom-subscription--black"
+          >
+            <p
+              class="custom-subscription__text custom-subscription__text--white"
+            >
+              It's perfect for clients who have a specific design idea in mind,
+              or for those who want a more hands-on approach to the design
+              process.
+            </p>
+          </div>
+          <div class="app-container__custom-subscription--photo">
+            <img src="img/gallery-image-1-md.jpg" alt="" />
+          </div>
+        </div>
+        <div class="app-container__custom-subscription--body">
+          <div class="app-container__custom-subscription--photo">
+            <img src="img/gallery-image-3-md.jpg" alt="" />
+          </div>
+          <div
+            class="app-container__custom-subscription--text-box app-container__custom-subscription--grey"
+          >
+            <p
+              class="custom-subscription__text custom-subscription__text--black"
+            >
+              Our team of experienced designers will work closely with you to
+              understand your vision and create a unique design solution that
+              fits your style.
+            </p>
+          </div>
+        </div>
+        <div class="app-container__custom-subscription--body">
+          <div
+            class="app-container__custom-subscription--text-box app-container__custom-subscription--black"
+          >
+            <p
+              class="custom-subscription__text custom-subscription__text--white"
+            >
+              Pricing for the Custom Plan will vary depending on the scope and
+              complexity of the project, the services required and the location.
+            </p>
+          </div>
+          <div class="app-container__custom-subscription--photo">
+            <img src="img/gallery-image-5-md.jpg" alt="" />
+          </div>
+        </div>
+        <div class="app-container__custom-subscription--body">
+          <div class="app-container__custom-subscription--photo">
+            <img src="img/top-designs-3-sm.jpg" alt="" />
+          </div>
+          <div
+            class="app-container__custom-subscription--text-box app-container__custom-subscription--grey"
+          >
+            <p
+              class="custom-subscription__text custom-subscription__text--black"
+            >
+              This plan also includes project management services, ensuring that
+              the project runs smoothly from start to finish.
+            </p>
+          </div>
+        </div>
+
+        <div class="app-container__custom-subscription--cta">
+          <p class="custom-subscription__cta-text">
+            Contact us for an estimate based on your specific requirements and
+            budget.
+          </p>
+          <button class="app-container__custom-subscription--btn btn">
+            Book appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const totalCartItems = document.getElementById("cart-items-length");
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      cart == []
+        ? (totalCartItems.innerHTML = "0")
+        : (totalCartItems.innerHTML = `${cart.length}`);
+    </script>
+  </body>
+</html>

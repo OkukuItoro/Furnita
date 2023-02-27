@@ -1,0 +1,64 @@
+.user-account {
+  width: 75%;
+  display: block;
+  margin: 3rem auto;
+  padding: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
+
+  & > * {
+    margin-block: 2rem;
+  }
+
+  &__avatar {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    color: white;
+  }
+
+  &__form {
+    &--inline {
+      display: flex;
+
+      & > * {
+        width: 40%;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 100%;
+        }
+      }
+    }
+
+    &--email {
+      width: 40%;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
+    }
+    &--block {
+      width: 80%;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
+    }
+
+    &--btn {
+      height: 4rem;
+      margin-top: 1.5rem;
+      width: 12rem;
+    }
+  }
+}

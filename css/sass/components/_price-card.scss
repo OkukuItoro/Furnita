@@ -1,0 +1,104 @@
+.price-card {
+  width: 30%;
+  height: 30rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 75%;
+    margin-block: 2rem;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &__heading {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    &--item {
+      margin: 1rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__btn {
+    height: 3rem;
+    width: 12rem;
+    margin-block: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 15rem;
+    }
+  }
+
+  &__basic {
+    border: 2px solid var(--text-color);
+    &--btn {
+      color: var(--text-color);
+      background: white;
+      border: 1.5px solid var(--text-color);
+
+      &:hover {
+        color: white;
+        background-color: black;
+        border: none;
+      }
+    }
+  }
+
+  &__standard {
+    border: 2px solid purple;
+
+    &--btn {
+      color: purple;
+      background-color: plum;
+
+      &:hover {
+        background: linear-gradient(to bottom right, rgb(223, 7, 165), purple);
+        color: white;
+      }
+    }
+  }
+
+  &__premium {
+    border: 2px solid goldenrod;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 3rem;
+    }
+
+    &--btn {
+      color: goldenrod;
+      background-color: rgb(253, 244, 109);
+
+      &:hover {
+        background: linear-gradient(
+          to bottom right,
+          rgb(252, 215, 50),
+          goldenrod
+        );
+        color: white;
+      }
+    }
+  }
+
+  &__green {
+    font-size: 1.2rem;
+    color: green;
+  }
+  &__red {
+    font-size: 1.2rem;
+    color: red;
+  }
+}

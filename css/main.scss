@@ -14,9 +14,23 @@
 @import "sass/components/slider";
 @import "sass/components/primary-slider";
 @import "sass/components/top-designs";
+@import "sass/components/user-form";
+@import "sass/components/price-card";
+@import "sass/components/side-bar";
+@import "sass/components/furniture_cards";
+@import "sass/components/cart-item";
+@import "sass/components/error-message";
+@import "sass/components/loading";
 
 // pages
 @import "sass/pages/app";
+@import "sass/pages/subscription_plans";
+@import "sass/pages/sign-up";
+@import "sass/pages/login";
+@import "sass/pages/booking";
+@import "sass/pages/shop";
+@import "sass/pages/cart";
+@import "sass/pages/user-account";
 
 // layout
 @import "sass/layout/navigation";

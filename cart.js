@@ -65,7 +65,7 @@ if (cart.length == 0) {
     subTotal += item.price;
 
     let html = `
-    <div id="cart-item" class="cart-item">
+    <div data-product-id="${item.productId}" id="cart-item" class="cart-item">
         <div class="cart-item__photo">
           <img src="img/${item.type}-${item.photo}-md.jpg" alt="" />
         </div>
@@ -91,7 +91,9 @@ if (cart.length == 0) {
           </div>
         </div>
         <div>
-          <button onclick="removeCartItem(event)" class="btn cart-item__remove-btn">
+          <button data-item-price="${
+            item.price
+          }" onclick="removeCartItem(event)" class="btn cart-item__remove-btn">
           remove
           </button>
         </div>
@@ -138,7 +140,27 @@ function cartState(e, action) {
 }
 
 function removeCartItem(e) {
-  e.target.parentNode.parentNode.remove();
+  const btn = e.target;
+  const itemPrice = btn.dataset.itemPrice;
+  const itemProductId = btn.parentNode.parentNode.dataset.productId;
+  btn.parentNode.parentNode.remove();
+  cart.forEach((cartItem) => {
+    if (itemProductId == cartItem.productId) {
+      const index = cart.indexOf(cartItem);
+      if (index > -1) cart.splice(index, 1);
+
+      // update local storage
+      localStorage.setItem("cart", JSON.stringify(cart));
+      totalCartItems.innerHTML = `${cart.length}`;
+
+      // payment calc
+      subTotal -= itemPrice * cartItemCounterMap[itemProductId];
+      calcItems();
+      subTotalElement.innerHTML = `$${subTotal.toFixed(2)}`;
+      shippingFeeElement.innerHTML = `$${shippingFee.toFixed(2)}`;
+      totalElement.innerHTML = `$${total.toFixed(2)}`;
+    }
+  });
 }
 
 calcItems();
@@ -361,7 +383,7 @@ function renderCurrTab() {
       paymentContainer.classList.remove("loading__hidden");
       paymentContainer.classList.add("loading__visible");
     }, 2000);
-  } else {
+  } else if (tab == 3) {
     return window.location.assign("/payment_confirmed.html");
   }
 }

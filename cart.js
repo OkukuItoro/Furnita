@@ -257,28 +257,28 @@ paymentHtml = `
       <form class="user-form payment__form">
         <div class="user-form__input user-account__form--block">
           <label class="user-form__input--label" for="card-number">Card Number</label>
-          <input id="card-number" type="input" />
+          <input class="input-form user-form__input--input" id="card-number" type="input" />
         </div>
         <div class="payment__form--inline">
           <div class="user-form__input">
             <label class="user-form__input--label" for="expiring-date"
               >Expiring Date</label
             >
-            <input id="expiring-date" type="text" />
+            <input class="input-form user-form__input--input" id="expiring-date" type="text" />
           </div>
           <div class="user-form__input">
             <label class="user-form__input--label" for="cvv"
               >CVV</label
             >
-            <input id="cvv" type="text" />
+            <input class="input-form user-form__input--input" id="cvv" type="text" />
           </div>
         </div>
-        <div>
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-apple-pay"></i>
-          <i class="fa-brands fa-cc-stripe"></i>
-        </div
+        <div style="margin-inline-start:5rem">
+          <i class="fa-brands fa-2x fa-cc-visa"></i>
+          <i class="fa-brands fa-2x fa-cc-mastercard"></i>
+          <i class="fa-brands fa-2x fa-cc-apple-pay"></i>
+          <i class="fa-brands fa-2x fa-cc-stripe"></i>
+        </div>
       </form>
     </div>
   </div>
@@ -308,8 +308,8 @@ function minMaxTab() {
   if (tab < 0) {
     tab = 0;
   }
-  if (tab > 2) {
-    tab = 2;
+  if (tab > 3) {
+    tab = 3;
   }
 }
 
@@ -343,7 +343,7 @@ function renderCurrTab() {
       summaryContainer.classList.add("loading__visible");
     }, 2000);
 
-    cartBtnDiv.remove();
+    if (profileComplete != true) cartBtnDiv.remove();
   } else if (tab == 2) {
     cartTab.classList.remove("cart__tab--active");
     summaryTab.classList.remove("cart__tab--active");
@@ -361,6 +361,8 @@ function renderCurrTab() {
       paymentContainer.classList.remove("loading__hidden");
       paymentContainer.classList.add("loading__visible");
     }, 2000);
+  } else {
+    return window.location.assign("/payment_confirmed.html");
   }
 }
 

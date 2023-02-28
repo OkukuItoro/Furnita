@@ -257,7 +257,10 @@
             Contact us for an estimate based on your specific requirements and
             budget.
           </p>
-          <button class="app-container__custom-subscription--btn btn">
+          <button
+            onclick="goToPage()"
+            class="app-container__custom-subscription--btn btn"
+          >
             Book appointment
           </button>
         </div>
@@ -271,6 +274,10 @@
       cart == []
         ? (totalCartItems.innerHTML = "0")
         : (totalCartItems.innerHTML = `${cart.length}`);
+
+      function goToPage() {
+        return window.location.assign("/booking.html");
+      }
     </script>
   </body>
 </html>

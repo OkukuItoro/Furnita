@@ -110,14 +110,15 @@
               <input id="checkbox" type="checkbox" />
               <label for="checkbox">Virtual Meeting</label>
             </div>
-            <button
-              class="user-form__btn btn booking__content--btn"
-              type="submit"
-            >
-              Book
-            </button>
           </form>
         </div>
+        <button
+          class="user-form__btn btn booking__content--btn"
+          type="submit"
+          onclick="goToPage()"
+        >
+          Book
+        </button>
       </div>
     </section>
     <script>
@@ -127,6 +128,10 @@
       cart == []
         ? (totalCartItems.innerHTML = "0")
         : (totalCartItems.innerHTML = `${cart.length}`);
+
+      function goToPage() {
+        return window.location.assign("/booking_confirmed.html");
+      }
     </script>
   </body>
 </html>

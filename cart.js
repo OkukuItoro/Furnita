@@ -384,6 +384,9 @@ function renderCurrTab() {
       paymentContainer.classList.add("loading__visible");
     }, 2000);
   } else if (tab == 3) {
+    cart.forEach((cartItem) => {
+      cart.pop(cartItem);
+    });
     return window.location.assign("/payment_confirmed.html");
   }
 }

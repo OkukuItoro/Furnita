@@ -1,0 +1,318 @@
+{
+  "sofas": [
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "meca-cotton green x231",
+      "price": 780,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 432112,
+      "type": "sofas",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Kanda Igwue",
+      "product_name": "carton-leather",
+      "price": 800,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 432154,
+      "type": "sofas",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Luxerie",
+      "product_name": "lux-leather omebrown-series",
+      "price": 1000,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 432431,
+      "type": "sofas",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Marctioni",
+      "product_name": "minitak yellow-x11",
+      "price": 1400,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 432675,
+      "type": "sofas",
+      "photo": 4
+    },
+    {
+      "manufacturer": "Ferro Charlton",
+      "product_name": "wild-leather brown-x01",
+      "price": 2900,
+      "has_discount": true,
+      "discount_percent": 32,
+      "productId": 432987,
+      "type": "sofas",
+      "photo": 5
+    },
+    {
+      "manufacturer": "Marctioni",
+      "product_name": "lumax-leather brown",
+      "price": 3200,
+      "has_discount": true,
+      "discount_percent": 32,
+      "productId": 432407,
+      "type": "sofas",
+      "photo": 6
+    }
+  ],
+
+  "beds": [
+    {
+      "manufacturer": "Gozzby",
+      "product_name": "panel bed frame",
+      "price": 2000,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 332128,
+      "type": "beds",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Honoly",
+      "product_name": "platform bed frame",
+      "price": 3200,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 332902,
+      "type": "beds",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "upholstered bed frame",
+      "price": 1000,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 332776,
+      "type": "beds",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Ferro Charlton",
+      "product_name": "sleigh bed frame",
+      "price": 1400,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 332832,
+      "type": "beds",
+      "photo": 4
+    },
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "upholstered bed frame",
+      "price": 2000,
+      "has_discount": true,
+      "discount_percent": 32,
+      "productId": 332430,
+      "type": "beds",
+      "photo": 5
+    },
+    {
+      "manufacturer": "Sweet Homes Inc",
+      "product_name": "panel bed frame",
+      "price": 2000,
+      "has_discount": true,
+      "discount_percent": 32,
+      "productId": 332117,
+      "type": "beds",
+      "photo": 6
+    }
+  ],
+
+  "chairs": [
+    {
+      "manufacturer": "Marc Erron",
+      "product_name": "teta-wood w231",
+      "price": 750,
+      "has_discount": true,
+      "discount_percent": 10,
+      "productId": 980412,
+      "type": "chairs",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Junimon",
+      "product_name": "lotti design",
+      "price": 550,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 98422,
+      "type": "chairs",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Homify",
+      "product_name": "holi wood",
+      "price": 350,
+      "has_discount": true,
+      "discount_percent": 25,
+      "productId": 980982,
+      "type": "chairs",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "meca-wood x530",
+      "price": 290,
+      "has_discount": true,
+      "discount_percent": 30,
+      "productId": 981970,
+      "type": "chairs",
+      "photo": 4
+    }
+  ],
+
+  "wardrobes": [
+    {
+      "manufacturer": "Marc Erron",
+      "product_name": "teta-wood w231",
+      "price": 600,
+      "has_discount": true,
+      "discount_percent": 10,
+      "productId": 654412,
+      "type": "wardrobes",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Junimon",
+      "product_name": "lotti design",
+      "price": 500,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 654322,
+      "type": "wardrobes",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Homify",
+      "product_name": "holi wood",
+      "price": 450,
+      "has_discount": true,
+      "discount_percent": 25,
+      "productId": 650982,
+      "type": "wardrobes",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "meca-wood x530",
+      "price": 640,
+      "has_discount": true,
+      "discount_percent": 35,
+      "productId": 658970,
+      "type": "wardrobes",
+      "photo": 4
+    },
+    {
+      "manufacturer": "Fulita Homes",
+      "product_name": "hifu h43",
+      "price": 480,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 653912,
+      "type": "wardrobes",
+      "photo": 5
+    },
+    {
+      "manufacturer": "Mandi Falls",
+      "product_name": "grand-wood 32w2",
+      "price": 490,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 659810,
+      "type": "wardrobes",
+      "photo": 6
+    }
+  ],
+
+  "cupboards": [
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "guda-wood cf31",
+      "price": 500,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 768512,
+      "type": "cupboards",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Kanda Igwue",
+      "product_name": "hota-wood",
+      "price": 650,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 768511,
+      "type": "cupboards",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Homify",
+      "product_name": "cupboard ty-series",
+      "price": 800,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 749990,
+      "type": "cupboards",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Marctioni",
+      "product_name": "godda yt77",
+      "price": 670,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 764421,
+      "type": "cupboards",
+      "photo": 4
+    }
+  ],
+  "kitchen": [
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "x002 design",
+      "price": 3900,
+      "has_discount": true,
+      "discount_percent": 15,
+      "productId": 875546,
+      "type": "kitchen",
+      "photo": 1
+    },
+    {
+      "manufacturer": "Kanda Igwue",
+      "product_name": "x052 design",
+      "price": 3200,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 879007,
+      "type": "kitchen",
+      "photo": 2
+    },
+    {
+      "manufacturer": "Homify",
+      "product_name": "x54 design",
+      "price": 2200,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 870954,
+      "type": "kitchen",
+      "photo": 3
+    },
+    {
+      "manufacturer": "Marctioni",
+      "product_name": "x49 design",
+      "price": 1800,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 870764,
+      "type": "kitchen",
+      "photo": 4
+    }
+  ]
+}

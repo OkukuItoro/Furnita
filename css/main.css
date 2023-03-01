@@ -1,32 +1,8 @@
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-3rem);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-  }
-}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     filter: blur(2px);
     transform: translateX(-3rem);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-  }
-}
-@-webkit-keyframes movesUp {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateY(3rem);
   }
   100% {
     opacity: 1;
@@ -46,18 +22,6 @@
     transform: translate(0);
   }
 }
-@-webkit-keyframes movesDown {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-  }
-}
 @keyframes movesDown {
   0% {
     opacity: 0;
@@ -68,18 +32,6 @@
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
-  }
-}
-@-webkit-keyframes zoomIn {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-    transform: scale(0.99);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: scale(1);
   }
 }
 @keyframes zoomIn {
@@ -95,145 +47,113 @@
   }
 }
 .animate-header__hero-image {
-  -webkit-animation: zoomIn 0.5s ease-in 0.2 backwards;
-          animation: zoomIn 0.5s ease-in 0.2 backwards;
+  animation: zoomIn 0.5s ease-in 0.2 backwards;
 }
 .animate-header__navbar {
-  -webkit-animation: movesDown 0.6s ease-in 0.4s backwards;
-          animation: movesDown 0.6s ease-in 0.4s backwards;
+  animation: movesDown 0.6s ease-in 0.4s backwards;
 }
 .animate-header__text-box {
-  -webkit-animation: moveInLeft 0.9s ease-in 1s backwards;
-          animation: moveInLeft 0.9s ease-in 1s backwards;
+  animation: moveInLeft 0.9s ease-in 1s backwards;
 }
 .animate-header__cta {
-  -webkit-animation: zoomIn 1.1s ease-in 1.2s backwards;
-          animation: zoomIn 1.1s ease-in 1.2s backwards;
+  animation: zoomIn 1.1s ease-in 1.2s backwards;
 }
 
 .animate-int-ex__photo-container {
-  -webkit-animation: movesUp 0.9s ease-in;
-          animation: movesUp 0.9s ease-in;
+  animation: movesUp 0.9s ease-in;
 }
 @media only screen and (max-width: 61.875em) {
   .animate-int-ex__photo-container {
-    -webkit-animation: movesUp 0.9s ease-in 1.4s backwards;
-            animation: movesUp 0.9s ease-in 1.4s backwards;
+    animation: movesUp 0.9s ease-in 1.4s backwards;
   }
 }
 .animate-int-ex__header {
-  -webkit-animation: moveInLeft 0.9s ease-in 1s backwards;
-          animation: moveInLeft 0.9s ease-in 1s backwards;
+  animation: moveInLeft 0.9s ease-in 1s backwards;
 }
 @media only screen and (max-width: 61.875em) {
   .animate-int-ex__header {
-    -webkit-animation: moveInLeft 0.9s ease-in backwards;
-            animation: moveInLeft 0.9s ease-in backwards;
+    animation: moveInLeft 0.9s ease-in backwards;
   }
 }
 .animate-int-ex__text-body {
-  -webkit-animation: movesDown 1.1s ease-in 1.5s backwards;
-          animation: movesDown 1.1s ease-in 1.5s backwards;
+  animation: movesDown 1.1s ease-in 1.5s backwards;
 }
 @media only screen and (max-width: 61.875em) {
   .animate-int-ex__text-body {
-    -webkit-animation: movesDown 0.9s ease-in 1.2s backwards;
-            animation: movesDown 0.9s ease-in 1.2s backwards;
+    animation: movesDown 0.9s ease-in 1.2s backwards;
   }
 }
 
 .animate-top-designs {
-  -webkit-animation: movesDown 1.1s ease-in;
-          animation: movesDown 1.1s ease-in;
+  animation: movesDown 1.1s ease-in;
 }
 .animate-top-designs__slider {
-  -webkit-animation: movesDown 1.1s ease-in 1s backwards;
-          animation: movesDown 1.1s ease-in 1s backwards;
+  animation: movesDown 1.1s ease-in 1s backwards;
 }
 
 .animate-slide__slider-head {
-  -webkit-animation: movesDown 0.7s ease-in backwards;
-          animation: movesDown 0.7s ease-in backwards;
+  animation: movesDown 0.7s ease-in backwards;
 }
 .animate-slide__item:nth-child(1) {
-  -webkit-animation: moveInLeft 1s ease-in 1s backwards;
-          animation: moveInLeft 1s ease-in 1s backwards;
+  animation: moveInLeft 1s ease-in 1s backwards;
 }
 .animate-slide__item:nth-child(2) {
-  -webkit-animation: moveInLeft 1s ease-in 1.1s backwards;
-          animation: moveInLeft 1s ease-in 1.1s backwards;
+  animation: moveInLeft 1s ease-in 1.1s backwards;
 }
 .animate-slide__item:nth-child(3) {
-  -webkit-animation: moveInLeft 1s ease-in 1.2s backwards;
-          animation: moveInLeft 1s ease-in 1.2s backwards;
+  animation: moveInLeft 1s ease-in 1.2s backwards;
 }
 .animate-slide__item:nth-child(4) {
-  -webkit-animation: moveInLeft 1s ease-in 1.3s backwards;
-          animation: moveInLeft 1s ease-in 1.3s backwards;
+  animation: moveInLeft 1s ease-in 1.3s backwards;
 }
 
 .animate-about__contact-logos {
-  -webkit-animation: moveInLeft 1s ease-in 1.1s backwards;
-          animation: moveInLeft 1s ease-in 1.1s backwards;
+  animation: moveInLeft 1s ease-in 1.1s backwards;
 }
 .animate-about__heading {
-  -webkit-animation: moveInLeft 1s ease-in 1.3s backwards;
-          animation: moveInLeft 1s ease-in 1.3s backwards;
+  animation: moveInLeft 1s ease-in 1.3s backwards;
 }
 .animate-about__description {
-  -webkit-animation: movesDown 1s ease-in 1.5s backwards;
-          animation: movesDown 1s ease-in 1.5s backwards;
+  animation: movesDown 1s ease-in 1.5s backwards;
 }
 
 .animate-credits__photo {
-  -webkit-animation: zoomIn 1.1s ease-in backwards;
-          animation: zoomIn 1.1s ease-in backwards;
+  animation: zoomIn 1.1s ease-in backwards;
 }
 .animate-credits__card:nth-child(1) {
-  -webkit-animation: zoomIn 1.1s ease-in 1.2s backwards;
-          animation: zoomIn 1.1s ease-in 1.2s backwards;
+  animation: zoomIn 1.1s ease-in 1.2s backwards;
 }
 .animate-credits__card:nth-child(2) {
-  -webkit-animation: zoomIn 1.1s ease-in 1.4s backwards;
-          animation: zoomIn 1.1s ease-in 1.4s backwards;
+  animation: zoomIn 1.1s ease-in 1.4s backwards;
 }
 .animate-credits__card:nth-child(3) {
-  -webkit-animation: zoomIn 1.1s ease-in 1.6s backwards;
-          animation: zoomIn 1.1s ease-in 1.6s backwards;
+  animation: zoomIn 1.1s ease-in 1.6s backwards;
 }
 .animate-credits__card:nth-child(4) {
-  -webkit-animation: zoomIn 1.1s ease-in 1.8s backwards;
-          animation: zoomIn 1.1s ease-in 1.8s backwards;
+  animation: zoomIn 1.1s ease-in 1.8s backwards;
 }
 
 .animate-mail-subscription__text {
-  -webkit-animation: movesDown 1.1s ease-in;
-          animation: movesDown 1.1s ease-in;
+  animation: movesDown 1.1s ease-in;
 }
 .animate-mail-subscription__icon {
-  -webkit-animation: zoomIn 1.1s ease-in 1.3s backwards;
-          animation: zoomIn 1.1s ease-in 1.3s backwards;
+  animation: zoomIn 1.1s ease-in 1.3s backwards;
 }
 .animate-mail-subscription__form {
-  -webkit-animation: zoomIn 1.1s ease-in 1.5s backwards;
-          animation: zoomIn 1.1s ease-in 1.5s backwards;
+  animation: zoomIn 1.1s ease-in 1.5s backwards;
 }
 
 .animate-contact__intro {
-  -webkit-animation: zoomIn 0.7s ease-in;
-          animation: zoomIn 0.7s ease-in;
+  animation: zoomIn 0.7s ease-in;
 }
 .animate-contact__links:nth-child(1) {
-  -webkit-animation: moveInLeft 0.7s ease-in 1s backwards;
-          animation: moveInLeft 0.7s ease-in 1s backwards;
+  animation: moveInLeft 0.7s ease-in 1s backwards;
 }
 .animate-contact__links:nth-child(2) {
-  -webkit-animation: moveInLeft 0.7s ease-in 1.2s backwards;
-          animation: moveInLeft 0.7s ease-in 1.2s backwards;
+  animation: moveInLeft 0.7s ease-in 1.2s backwards;
 }
 .animate-contact__links:nth-child(3) {
-  -webkit-animation: moveInLeft 0.7s ease-in 1.3s backwards;
-          animation: moveInLeft 0.7s ease-in 1.3s backwards;
+  animation: moveInLeft 0.7s ease-in 1.3s backwards;
 }
 
 :root {
@@ -682,7 +602,6 @@ a {
 .custom-subscription__cta-text {
   font-size: 1.6rem;
   color: white;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -808,7 +727,6 @@ a {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .btn__navbar {
@@ -985,7 +903,7 @@ a {
 
 @media only screen and (max-width: 61.875em) {
   .kitchen-interior,
-.exterior {
+  .exterior {
     flex-direction: column;
   }
 }
@@ -1635,7 +1553,6 @@ a {
   margin: 1.5rem;
   padding: 1.5rem;
   font-size: 1.5rem;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1658,6 +1575,16 @@ a {
   width: 32rem;
   border-radius: 5px;
   margin: 1rem;
+}
+@media only screen and (max-width: 31.875em) {
+  .furniture {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 22.8125em) {
+  .furniture {
+    width: 32rem;
+  }
 }
 .furniture__photo {
   width: 100%;
@@ -1756,8 +1683,7 @@ a {
 }
 .loading__visible {
   display: block;
-  -webkit-animation: movesUp 0.5s ease-in;
-          animation: movesUp 0.5s ease-in;
+  animation: movesUp 0.5s ease-in;
 }
 .loading__container {
   position: absolute;
@@ -1795,16 +1721,7 @@ a {
   border: 0.7rem solid var(--secondary-color);
   border-radius: 50%;
   border-top: 0.7rem solid var(--text-color);
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -2211,7 +2128,6 @@ a {
 }
 .booking__content--chosen-plan {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-block: 2rem;

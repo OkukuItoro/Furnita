@@ -10,253 +10,324 @@ const contentItems = document.querySelector(".shop__content--items");
 const loadingScreen = document.getElementById("loading-screen");
 
 // Furnita Database
-const furnita_data = {
-  sofas: [
-    {
-      manufacturer: "Lasdino",
-      product_name: "meca-cotton green x231",
-      price: 2000,
-      has_discount: true,
-      discount_percent: 15,
-      productId: 432112,
-      type: "sofas",
-      photo: 1,
-    },
-    {
-      manufacturer: "Kanda Igwue",
-      product_name: "carton-leather",
-      price: 3200,
-      has_discount: true,
-      discount_percent: 20,
-      productId: 432154,
-      type: "sofas",
-      photo: 2,
-    },
-    {
-      manufacturer: "Luxerie",
-      product_name: "lux-leather omebrown-series",
-      price: 1000,
-      has_discount: true,
-      discount_percent: 20,
-      productId: 432431,
-      type: "sofas",
-      photo: 3,
-    },
-    {
-      manufacturer: "Marctioni",
-      product_name: "minitak yellow-x11",
-      price: 1400,
-      has_discount: true,
-      discount_percent: 20,
-      productId: 432675,
-      type: "sofas",
-      photo: 4,
-    },
-    {
-      manufacturer: "Ferro Charlton",
-      product_name: "wild-leather brown-x01",
-      price: 2000,
-      has_discount: true,
-      discount_percent: 32,
-      productId: 432987,
-      type: "sofas",
-      photo: 5,
-    },
-    {
-      manufacturer: "Marctioni",
-      product_name: "lumax-leather brown",
-      price: 4000,
-      has_discount: true,
-      discount_percent: 32,
-      productId: 432407,
-      type: "sofas",
-      photo: 6,
-    },
-  ],
+// const furnita_data = {
+//   sofas: [
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "meca-cotton green x231",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 432112,
+//       type: "sofas",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Kanda Igwue",
+//       product_name: "carton-leather",
+//       price: 3200,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 432154,
+//       type: "sofas",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Luxerie",
+//       product_name: "lux-leather omebrown-series",
+//       price: 1000,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 432431,
+//       type: "sofas",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Marctioni",
+//       product_name: "minitak yellow-x11",
+//       price: 1400,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 432675,
+//       type: "sofas",
+//       photo: 4,
+//     },
+//     {
+//       manufacturer: "Ferro Charlton",
+//       product_name: "wild-leather brown-x01",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 32,
+//       productId: 432987,
+//       type: "sofas",
+//       photo: 5,
+//     },
+//     {
+//       manufacturer: "Marctioni",
+//       product_name: "lumax-leather brown",
+//       price: 4000,
+//       has_discount: true,
+//       discount_percent: 32,
+//       productId: 432407,
+//       type: "sofas",
+//       photo: 6,
+//     },
+//   ],
 
-  beds: [
-    {
-      manufacturer: "Gozzby",
-      product_name: "panel bed frame",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 15,
-      productId: 332128,
-      type: "beds",
-    },
-    {
-      manufacturer: "Honoly",
-      product_name: "platform bed frame",
-      price: "$3,200",
-      has_discount: true,
-      discount_percent: 20,
-      productId: 332902,
-      type: "beds",
-    },
-    {
-      manufacturer: "Lasdino",
-      product_name: "upholstered bed frame",
-      price: "$1,000",
-      has_discount: true,
-      discount_percent: 20,
-      productId: 332776,
-      type: "beds",
-    },
-    {
-      manufacturer: "Ferro Charlton",
-      product_name: "sleigh bed frame",
-      price: "$1,400",
-      has_discount: true,
-      discount_percent: 20,
-      productId: 332832,
-      type: "beds",
-    },
-    {
-      manufacturer: "Lasdino",
-      product_name: "upholstered bed frame",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-      productId: 332430,
-      type: "beds",
-    },
-    {
-      manufacturer: "Luxerie",
-      product_name: "panel bed frame",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-      productId: 332117,
-      type: "beds",
-    },
-    {
-      manufacturer: "dotzi",
-      product_name: "panel bed frame",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-      productId: 332809,
-      type: "beds",
-    },
-    {
-      manufacturer: "Sweet Homes Inc",
-      product_name: "storage bed frame",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-      productId: 332653,
-      type: "beds",
-    },
-    {
-      manufacturer: "Homify",
-      product_name: "platform bed frames",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-      productId: 332004,
-      type: "beds",
-    },
-  ],
+//   beds: [
+//     {
+//       manufacturer: "Gozzby",
+//       product_name: "panel bed frame",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 332128,
+//       type: "beds",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Honoly",
+//       product_name: "platform bed frame",
+//       price: 3200,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 332902,
+//       type: "beds",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "upholstered bed frame",
+//       price: 1000,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 332776,
+//       type: "beds",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Ferro Charlton",
+//       product_name: "sleigh bed frame",
+//       price: 1400,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 332832,
+//       type: "beds",
+//       photo: 4,
+//     },
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "upholstered bed frame",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 32,
+//       productId: 332430,
+//       type: "beds",
+//       photo: 5,
+//     },
+//     {
+//       manufacturer: "Sweet Homes Inc",
+//       product_name: "panel bed frame",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 32,
+//       productId: 332117,
+//       type: "beds",
+//       photo: 6,
+//     },
+//   ],
 
-  tables: [
-    {
-      product_name: "Kanda Igwue",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 15,
-    },
-    {
-      product_name: "Lasdino",
-      price: "$3,200",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Luxerie",
-      price: "$1,000",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Marctioni",
-      price: "$1,400",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Ferro Charlton",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-    },
-  ],
+//   chairs: [
+//     {
+//       manufacturer: "Marc Erron",
+//       product_name: "teta-wood w231",
+//       price: 800,
+//       has_discount: true,
+//       discount_percent: 10,
+//       productId: 980412,
+//       type: "chairs",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Junimon",
+//       product_name: "lotti design",
+//       price: 500,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 98422,
+//       type: "chairs",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Homify",
+//       product_name: "holi wood",
+//       price: 350,
+//       has_discount: true,
+//       discount_percent: 25,
+//       productId: 980982,
+//       type: "chairs",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "meca-wood x530",
+//       price: 200,
+//       has_discount: true,
+//       discount_percent: 30,
+//       productId: 981970,
+//       type: "chairs",
+//       photo: 4,
+//     },
+//   ],
 
-  chairs: [
-    {
-      product_name: "Kanda Igwue",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 15,
-    },
-    {
-      product_name: "Lasdino",
-      price: "$3,200",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Luxerie",
-      price: "$1,000",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Marctioni",
-      price: "$1,400",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Ferro Charlton",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-    },
-  ],
+//   wardrobes: [
+//     {
+//       manufacturer: "Marc Erron",
+//       product_name: "teta-wood w231",
+//       price: 3000,
+//       has_discount: true,
+//       discount_percent: 10,
+//       productId: 654412,
+//       type: "wardrobes",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Junimon",
+//       product_name: "lotti design",
+//       price: 2500,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 654322,
+//       type: "wardrobes",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Homify",
+//       product_name: "holi wood",
+//       price: 4000,
+//       has_discount: true,
+//       discount_percent: 25,
+//       productId: 650982,
+//       type: "wardrobes",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "meca-wood x530",
+//       price: 2600,
+//       has_discount: true,
+//       discount_percent: 35,
+//       productId: 658970,
+//       type: "wardrobes",
+//       photo: 4,
+//     },
+//     {
+//       manufacturer: "Fulita Homes",
+//       product_name: "hifu h43",
+//       price: 4000,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 653912,
+//       type: "wardrobes",
+//       photo: 5,
+//     },
+//     {
+//       manufacturer: "Mandi Falls",
+//       product_name: "grand-wood 32w2",
+//       price: 3400,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 659810,
+//       type: "wardrobes",
+//       photo: 6,
+//     },
+//   ],
 
-  wardrobes: [
-    {
-      product_name: "Kanda Igwue",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 15,
-    },
-    {
-      product_name: "Lasdino",
-      price: "$3,200",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Luxerie",
-      price: "$1,000",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Marctioni",
-      price: "$1,400",
-      has_discount: true,
-      discount_percent: 20,
-    },
-    {
-      product_name: "Ferro Charlton",
-      price: "$2,000",
-      has_discount: true,
-      discount_percent: 32,
-    },
-  ],
-};
+//   cupboards: [
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "guda-wood cf31",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 768512,
+//       type: "cupboards",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Kanda Igwue",
+//       product_name: "hota-wood",
+//       price: 3200,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 768511,
+//       type: "cupboards",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Homify",
+//       product_name: "cupboard ty-series",
+//       price: 1000,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 749990,
+//       type: "cupboards",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Marctioni",
+//       product_name: "godda yt77",
+//       price: 1400,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 764421,
+//       type: "cupboards",
+//       photo: 4,
+//     },
+//   ],
+//   kitchen: [
+//     {
+//       manufacturer: "Lasdino",
+//       product_name: "x002 design",
+//       price: 2000,
+//       has_discount: true,
+//       discount_percent: 15,
+//       productId: 875546,
+//       type: "kitchen",
+//       photo: 1,
+//     },
+//     {
+//       manufacturer: "Kanda Igwue",
+//       product_name: "x052 design",
+//       price: 3200,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 879007,
+//       type: "kitchen",
+//       photo: 2,
+//     },
+//     {
+//       manufacturer: "Homify",
+//       product_name: "x54 design",
+//       price: 1000,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 870954,
+//       type: "kitchen",
+//       photo: 3,
+//     },
+//     {
+//       manufacturer: "Marctioni",
+//       product_name: "x49 design",
+//       price: 1400,
+//       has_discount: true,
+//       discount_percent: 20,
+//       productId: 870764,
+//       type: "kitchen",
+//       photo: 4,
+//     },
+//   ],
+// };
 
 // loading function initialization
 function loading(loadingIcon, content, loadTime) {
@@ -313,7 +384,7 @@ cart == []
   : (totalCartItems.innerHTML = `${cart.length}`);
 
 /** Cart Function (add and remove from cart) */
-const cartFunction = (e) => {
+function cartFunction(e) {
   const btn = e.target;
 
   let itemProductId = btn.dataset.productId;
@@ -323,15 +394,24 @@ const cartFunction = (e) => {
     btn.textContent = "remove";
 
     // add to cart
-    furnita_data[`${category}`].forEach((item) => {
-      if (item.productId == itemProductId) {
-        cart.push(item);
+    fetch("/folt.json")
+      .then((res) => {
+        return res.json();
+      })
+      .then((furnitaData) => {
+        furnitaData[`${category}`].forEach((item) => {
+          if (item.productId == itemProductId) {
+            cart.push(item);
 
-        // set local storage
-        localStorage.setItem("cart", JSON.stringify(cart));
-        totalCartItems.innerHTML = `${cart.length}`;
-      }
-    });
+            // set local storage
+            localStorage.setItem("cart", JSON.stringify(cart));
+            totalCartItems.innerHTML = `${cart.length}`;
+          }
+        });
+      })
+      .catch((err) => {
+        console.log("could not retrieve data");
+      });
   } else {
     btn.textContent = "add to cart";
 
@@ -348,15 +428,20 @@ const cartFunction = (e) => {
       }
     });
   }
-};
+}
 
 // Dynamic Furniture Products (html array)
 let html = [];
 
-/* Initial Product Category (Sofas) */
-const sofas = furnita_data.sofas;
-sofas.forEach((item, index) => {
-  html += `
+fetch("/folt.json")
+  .then((res) => {
+    return res.json();
+  })
+  .then((furnitaData) => {
+    /* Initial Product Category (Sofas) */
+    const sofas = furnitaData.sofas;
+    sofas.forEach((item, index) => {
+      html += `
     <div class="furniture">
         <img class="furniture__photo" src="img/sofas-${(index += 1)}-md.jpg" alt="" />
         <div class="furniture__details">
@@ -377,22 +462,22 @@ sofas.forEach((item, index) => {
         </div>
     </div>
         `;
-});
-contentItems.insertAdjacentHTML("beforeend", html);
+    });
+    contentItems.insertAdjacentHTML("beforeend", html);
 
-/** Side Bar Event Function for each category */
-sideBarLinks.addEventListener("click", (e) => {
-  let category = e.target.textContent;
-  category = category.toLowerCase();
+    /** Side Bar Event Function for each category */
+    sideBarLinks.addEventListener("click", (e) => {
+      let category = e.target.textContent;
+      category = category.toLowerCase();
 
-  // clear previous category items
-  let newHtml = [];
-  while (contentItems.firstChild) {
-    contentItems.firstChild.remove();
-  }
+      // clear previous category items
+      let newHtml = [];
+      while (contentItems.firstChild) {
+        contentItems.firstChild.remove();
+      }
 
-  // Dynamic Side Bar Loader html
-  let loadingHtml = `
+      // Dynamic Side Bar Loader html
+      let loadingHtml = `
   <section id="side-bar-loading" class="loading__screen">
     <div class="loading__shop-container">
       <div class="loading__visible loading__spinner"></div>
@@ -404,20 +489,20 @@ sideBarLinks.addEventListener("click", (e) => {
     </div>
   </section>
   `;
-  productContent.insertAdjacentHTML("afterbegin", loadingHtml);
+      productContent.insertAdjacentHTML("afterbegin", loadingHtml);
 
-  // Side Bar Loader Selector
-  const sideBarLoading = document.getElementById("side-bar-loading");
+      // Side Bar Loader Selector
+      const sideBarLoading = document.getElementById("side-bar-loading");
 
-  // loading function
-  loading(sideBarLoading, contentItems, 1000);
+      // loading function
+      loading(sideBarLoading, contentItems, 1000);
 
-  // Dynamic Rendering of Furnita's Data based on category.
-  if (category in furnita_data) {
-    const furnitureCategory = furnita_data[`${category}`];
+      // Dynamic Rendering of Furnita's Data based on category.
+      if (category in furnitaData) {
+        const furnitureCategory = furnitaData[`${category}`];
 
-    furnitureCategory.forEach((item, index) => {
-      newHtml += `
+        furnitureCategory.forEach((item, index) => {
+          newHtml += `
         <div class="furniture">
             <img class="furniture__photo" src="img/${category}-${(index += 1)}-md.jpg" alt="" />
             <div class="furniture__details">
@@ -437,10 +522,14 @@ sideBarLinks.addEventListener("click", (e) => {
             </div>
         </div>
     `;
+        });
+        contentItems.insertAdjacentHTML("beforeend", newHtml);
+      }
     });
-    contentItems.insertAdjacentHTML("beforeend", newHtml);
-  }
-});
+  })
+  .catch((err) => {
+    console.log("could not retrieve data");
+  });
 
 // Furniture Card's button parent (div) selector
 const cartBtnDiv = Array.from(

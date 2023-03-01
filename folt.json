@@ -165,6 +165,16 @@
       "productId": 981970,
       "type": "chairs",
       "photo": 4
+    },
+    {
+      "manufacturer": "Lasdino",
+      "product_name": "plastic yhr00",
+      "price": 220,
+      "has_discount": true,
+      "discount_percent": 20,
+      "productId": 989000,
+      "type": "chairs",
+      "photo": 5
     }
   ],
 
